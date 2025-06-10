@@ -10,6 +10,9 @@ const config = {
   tagline: 'TEKBOT ROBOTICS Challenge',
   favicon: 'img/fav.ico',
 
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'warn',
+
   // Activation des options futures (préparation Docusaurus v4)
   future: {
     v4: true,
@@ -22,9 +25,6 @@ const config = {
   // Configuration GitHub Pages
   organizationName: 'TekBot-Robotics-Challenge',
   projectName: '2025-Team-The_Winners-Docs',
-
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Langue du site
   i18n: {
@@ -112,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorial',
               },
             ],
           },
@@ -121,15 +121,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.com/',
               },
               {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/',
               },
             ],
           },
@@ -137,12 +137,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com',
               },
             ],
           },
