@@ -1,0 +1,36 @@
+[1.095s] Invoking command in '/home/lory/ros2_ws/src/sensor_data_evaluation': PYTHONPATH=/home/lory/ros2_ws/build/sensor_data_evaluation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_data_evaluation build --build-base /home/lory/ros2_ws/build/sensor_data_evaluation/build install --record /home/lory/ros2_ws/build/sensor_data_evaluation/install.log --single-version-externally-managed install_data
+[1.396s] running egg_info
+[1.398s] writing ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/PKG-INFO
+[1.399s] writing dependency_links to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/dependency_links.txt
+[1.400s] writing entry points to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/entry_points.txt
+[1.401s] writing requirements to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/requires.txt
+[1.402s] writing top-level names to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/top_level.txt
+[1.409s] reading manifest file '../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/SOURCES.txt'
+[1.414s] writing manifest file '../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/SOURCES.txt'
+[1.415s] running build
+[1.415s] running build_py
+[1.415s] creating /home/lory/ros2_ws/build/sensor_data_evaluation/build
+[1.419s] creating /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib
+[1.420s] creating /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation
+[1.420s] copying sensor_data_evaluation/__init__.py -> /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation
+[1.421s] copying sensor_data_evaluation/sensor_subscriber.py -> /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation
+[1.422s] copying sensor_data_evaluation/sensor_publisher.py -> /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation
+[1.422s] running install
+[1.423s] running install_lib
+[1.425s] creating /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation
+[1.426s] copying /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation/__init__.py -> /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation
+[1.426s] copying /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation/sensor_subscriber.py -> /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation
+[1.427s] copying /home/lory/ros2_ws/build/sensor_data_evaluation/build/lib/sensor_data_evaluation/sensor_publisher.py -> /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation
+[1.431s] byte-compiling /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation/__init__.py to __init__.cpython-310.pyc
+[1.432s] byte-compiling /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation/sensor_subscriber.py to sensor_subscriber.cpython-310.pyc
+[1.437s] byte-compiling /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation/sensor_publisher.py to sensor_publisher.cpython-310.pyc
+[1.439s] running install_data
+[1.440s] copying package.xml -> /home/lory/ros2_ws/install/sensor_data_evaluation/share/sensor_data_evaluation
+[1.441s] running install_egg_info
+[1.450s] removing '/home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.451s] Copying ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info to /home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages/sensor_data_evaluation-0.0.0-py3.10.egg-info
+[1.455s] running install_scripts
+[1.486s] Installing sensor_publisher script to /home/lory/ros2_ws/install/sensor_data_evaluation/lib/sensor_data_evaluation
+[1.487s] Installing sensor_subscriber script to /home/lory/ros2_ws/install/sensor_data_evaluation/lib/sensor_data_evaluation
+[1.487s] writing list of installed files to '/home/lory/ros2_ws/build/sensor_data_evaluation/install.log'
+[1.559s] Invoked command in '/home/lory/ros2_ws/src/sensor_data_evaluation' returned '0': PYTHONPATH=/home/lory/ros2_ws/build/sensor_data_evaluation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_data_evaluation build --build-base /home/lory/ros2_ws/build/sensor_data_evaluation/build install --record /home/lory/ros2_ws/build/sensor_data_evaluation/install.log --single-version-externally-managed install_data

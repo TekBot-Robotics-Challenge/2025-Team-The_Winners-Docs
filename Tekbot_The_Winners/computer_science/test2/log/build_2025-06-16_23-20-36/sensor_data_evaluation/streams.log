@@ -1,0 +1,17 @@
+[0.358s] Invoking command in '/home/lory/ros2_ws/src/sensor_data_evaluation': PYTHONPATH=/home/lory/ros2_ws/build/sensor_data_evaluation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_data_evaluation build --build-base /home/lory/ros2_ws/build/sensor_data_evaluation/build install --record /home/lory/ros2_ws/build/sensor_data_evaluation/install.log --single-version-externally-managed install_data
+[0.496s] running egg_info
+[0.496s] writing ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/PKG-INFO
+[0.496s] writing dependency_links to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/dependency_links.txt
+[0.497s] writing entry points to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/entry_points.txt
+[0.497s] writing requirements to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/requires.txt
+[0.497s] writing top-level names to ../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/top_level.txt
+[0.498s] reading manifest file '../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/SOURCES.txt'
+[0.498s] writing manifest file '../../build/sensor_data_evaluation/sensor_data_evaluation.egg-info/SOURCES.txt'
+[0.498s] running build
+[0.498s] running build_py
+[0.498s] running install
+[0.499s] running install_lib
+[0.500s] running install_data
+[0.500s] creating /home/lory/ros2_ws/install/sensor_data_evaluation/share/sensor_data_evaluation/launch
+[0.500s] error: can't copy 'launch/sensor_launch.py': doesn't exist or not a regular file
+[0.512s] Invoked command in '/home/lory/ros2_ws/src/sensor_data_evaluation' returned '1': PYTHONPATH=/home/lory/ros2_ws/build/sensor_data_evaluation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lory/ros2_ws/install/sensor_data_evaluation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_data_evaluation build --build-base /home/lory/ros2_ws/build/sensor_data_evaluation/build install --record /home/lory/ros2_ws/build/sensor_data_evaluation/install.log --single-version-externally-managed install_data
