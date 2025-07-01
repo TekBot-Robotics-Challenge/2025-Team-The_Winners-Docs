@@ -64,7 +64,7 @@ const bool leds[12][7] = {
 
 // Timing without delay()
 unsigned long previousMillis = 0;
-const long interval = 1000; // 1 seconds
+const long interval = 1000; // 1 second
 int currentDigit = 0;
 int direction = 1; // +1 = up ; -1 = down
 
