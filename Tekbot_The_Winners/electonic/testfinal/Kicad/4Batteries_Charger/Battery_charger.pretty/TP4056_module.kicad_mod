@@ -1,0 +1,185 @@
+(footprint "TP4056_module"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 14.54 -9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f6df1d9b-fffb-449c-a8e5-d2a9016a7bc0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TP4056"
+		(at 14.07 -10.94 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4447e42e-d0c8-4ed4-b24e-ee7dba62b6f8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9cc6980-56b3-4511-9596-ce6fdddf5971")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "86e2d798-b8bf-4ad0-9537-c651ad3d9f51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.07 -17.22)
+		(end 28.07 -17.22)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "34b86599-1b0f-44fa-adda-f8fcd3fd12b9")
+	)
+	(fp_line
+		(start 0.07 -0.02)
+		(end 0.07 -17.22)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "58064507-4852-4b94-bd65-72c4aa30c44f")
+	)
+	(fp_line
+		(start 28.07 -17.22)
+		(end 28.07 -0.02)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7ca2604a-e4ca-4ee6-8016-a2c46db2a011")
+	)
+	(fp_line
+		(start 28.07 -0.02)
+		(end 0.07 -0.02)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3b7a0c99-3f9a-49a8-8ed6-dc0fb7a86a0d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 14.88 -6.72 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2e88517d-75a0-4a7c-bc6d-dcb07f9a8866")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 2.52 -15.62)
+		(size 1.905 1.905)
+		(drill 0.64)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c5377f18-9e22-41af-b55b-f40e781b8af1")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 -1.35)
+		(size 1.905 1.905)
+		(drill 0.64)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5f95fe41-e9ad-46ee-8535-bf9ece8a9f47")
+	)
+	(pad "3" thru_hole circle
+		(at 25.85 -4.8)
+		(size 1.905 1.905)
+		(drill 0.64)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7a75b854-8efb-4599-9778-1796c7fcdf4a")
+	)
+	(pad "4" thru_hole circle
+		(at 25.8 -12.25)
+		(size 1.905 1.905)
+		(drill 0.64)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a587e1fc-5e63-468b-be63-920a065c91ef")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.SilkS")
+		(uuid "5a1eca20-0c6a-4341-8d57-45deb4f3fb3a")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads not_allowed)
+			(copperpour allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 0.07 -17.22) (xy 28.07 -17.22) (xy 28.07 -0.02) (xy 0.07 -0.02)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "C:/Users/HP/OneDrive/Documents/KiCad_Projects/SimacSys_PCB_Librairy/TP4056--3DModel-STEP-684600.STEP"
+		(offset
+			(xyz 1 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 180)
+		)
+	)
+)
