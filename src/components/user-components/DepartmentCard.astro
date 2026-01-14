@@ -1,0 +1,236 @@
+---
+interface TestItem {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  tests: TestItem[];
+  color: string;
+}
+
+const { title, description, tests, color } = Astro.props;
+const cardId = `card-${title.toLowerCase().replace(/\s+/g, '-')}`;
+---
+
+<div class="department-card" data-color={color}>
+  <div class="card-header">
+    <div class="card-info">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+    <button class="dropdown-toggle" data-target={cardId} aria-expanded="false">
+      <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="dropdown-content" id={cardId}>
+    <ul class="tests-list">
+      {tests.map((test) => (
+        <li>
+          <a href={test.href} class="test-link">{test.name}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .department-card {
+    background: color-mix(in srgb, var(--sl-color-white) 5%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sl-color-white) 10%, transparent);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .department-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .department-card:hover {
+    background: color-mix(in srgb, var(--sl-color-white) 8%, transparent);
+    border-color: color-mix(in srgb, var(--sl-color-white) 20%, transparent);
+    transform: translateY(-2px);
+  }
+
+  .department-card:hover::before {
+    opacity: 1;
+  }
+
+  .department-card[data-color="purple"] {
+    --accent-color: #9b87f5;
+  }
+
+  .department-card[data-color="blue"] {
+    --accent-color: #6366f1;
+  }
+
+  .department-card[data-color="amber"] {
+    --accent-color: #f59e0b;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card-info {
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--sl-color-white);
+  }
+
+  p {
+    font-size: 0.875rem;
+    margin: 0;
+    color: color-mix(in srgb, var(--sl-color-white) 70%, transparent);
+  }
+
+  .dropdown-toggle {
+    background: color-mix(in srgb, var(--sl-color-white) 10%, transparent);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--sl-color-white);
+  }
+
+  .dropdown-toggle:hover {
+    background: color-mix(in srgb, var(--sl-color-white) 15%, transparent);
+  }
+
+  .chevron {
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown-toggle[aria-expanded="true"] .chevron {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, margin-top 0.3s ease;
+  }
+
+  .dropdown-content.open {
+    max-height: 300px;
+    margin-top: 1rem;
+  }
+
+  .tests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tests-list li {
+    background: color-mix(in srgb, var(--sl-color-white) 3%, transparent);
+    padding: 0;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    border-left: 2px solid var(--accent-color);
+    transition: all 0.2s ease;
+  }
+
+  .tests-list li:hover {
+    background: color-mix(in srgb, var(--sl-color-white) 8%, transparent);
+    transform: translateX(4px);
+  }
+
+  .test-link {
+    display: block;
+    padding: 0.625rem 0.875rem;
+    color: color-mix(in srgb, var(--sl-color-white) 90%, transparent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .test-link:hover {
+    color: var(--sl-color-white);
+  }
+
+  .tests-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .department-card {
+      padding: 0.875rem 1rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8125rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButtons = document.querySelectorAll('.dropdown-toggle');
+    
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const target = button.getAttribute('data-target');
+        if (!target) return;
+        const content = document.getElementById(target);
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        // Close all other dropdowns
+        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+          if (dropdown.id !== target) {
+            dropdown.classList.remove('open');
+          }
+        });
+        
+        document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+          if (btn !== button) {
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current dropdown
+        if (content) {
+          if (isExpanded) {
+            content.classList.remove('open');
+            button.setAttribute('aria-expanded', 'false');
+          } else {
+            content.classList.add('open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        }
+      });
+    });
+  });
+</script>

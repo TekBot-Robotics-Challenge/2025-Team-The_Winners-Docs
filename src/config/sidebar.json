@@ -1,0 +1,120 @@
+{
+  "main": [
+     {
+      "label": "About",
+      "translations": {
+        "de": "About"
+      },
+      "items": [
+        {
+          "label": "Introduction",
+          "translations": {
+            "de": "Introduction"
+          },
+          "slug": "about/introduction"
+        },
+        {
+          "label": "Team",
+          "translations": {
+            "de": "Team"
+          },
+          "slug": "about/team"
+        },
+        {
+          "label": "Objectives",
+          "translations": {
+            "de": "Objectives"
+          },
+          "slug": "about/goals"
+        },
+        {
+          "label": "College",
+          "translations": {
+            "de": "College"
+          },
+          "slug": "about/college"
+        },
+        {
+          "label": "Contacts",
+          "translations": {
+            "de": "Contacts"
+          },
+          "slug": "about/contacts"
+        }
+      ]
+    },
+    {
+      "label": "Media",
+      "translations": {
+        "de": "Media"
+      },
+      "items": [
+        {
+          "label": "Photos",
+          "translations": {
+            "de": "Photos"
+          },
+          "slug": "media/photos"
+        },
+        {
+          "label": "Videos",
+          "translations": {
+            "de": "Videos"
+          },
+          "slug": "media/videos"
+        }
+      ]
+    },
+    {
+      "label": "IT",
+      "translations": {
+        "de": "IT"
+      },
+      "items": [
+        {
+          "label": "[seti:vite] Preselection Test",
+          "translations": {
+            "de": "[seti:vite] Preselection Test"
+          },
+          "autogenerate": { "directory": "getting-started/introduction" }
+        },
+        {
+          "label": "[setting] Test Final",
+          "translations": {
+            "de": "[setting] Test Final"
+          },
+          "autogenerate": { "directory": "getting-started/global-settings" }
+        }
+      ]
+    },
+    {
+      "label": "Electronic",
+      "translations": {
+        "de": "Electronic"
+      },
+      "items": [
+        {
+          "label": "[document] Preselection Test",
+          "translations": {
+            "de": "[document] Preselection Test"
+          },
+          "autogenerate": { "directory": "contents/components" }
+        },
+        {
+          "label": "[pencil] Test Final",
+          "translations": {
+            "de": "[pencil] Test Final"
+          },
+          "slug": "contents/editing/electronic"
+        }
+      ]
+    },
+    {
+      "label": "Mechanic",
+      "translations": {
+        "de": "Mechanic"
+      },
+      "autogenerate": { "directory": "reference" }
+    }
+  ]
+}

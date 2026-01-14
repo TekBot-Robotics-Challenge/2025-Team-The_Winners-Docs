@@ -1,0 +1,47 @@
+---
+import theme from "@/config/theme.json";
+const { head } = Astro.locals.starlightRoute;
+
+// Récupérer les noms de polices depuis la configuration
+const pf = theme.fonts.font_family.primary;
+// safe access for optional secondary font
+const sf = (theme.fonts.font_family as any).secondary ?? null;
+
+// Nettoyer les noms de polaces
+let fontPrimary = 'Inter';
+let fontSecondary = 'Inter';
+
+if (theme.fonts.font_family.primary) {
+  fontPrimary = theme.fonts.font_family.primary
+    .replace(/\+/g, " ")
+    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;.]+/gi, "");
+}
+
+const secondaryRaw = (theme.fonts.font_family as any).secondary ?? null;
+if (secondaryRaw) {
+  fontSecondary = String(secondaryRaw)
+    .replace(/\+/g, " ")
+    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;.]+/gi, "");
+}
+---
+
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+
+<!-- Chargement simplifié des polaces -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+  rel="stylesheet"
+>
+
+<style>
+  :root {
+    --font-primary: '{fontPrimary}', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-secondary: '{fontSecondary}', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+  }
+</style>

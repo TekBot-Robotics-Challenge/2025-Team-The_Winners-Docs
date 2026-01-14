@@ -1,0 +1,178 @@
+---
+title: The Winners Documentation
+description: Get started building your docs site with DocKit.
+template: splash
+hero:
+  title: |
+    The <span data-icon-path='bras-robotique.png'></span> Winners
+    <span class="light-text">Documentation</span>
+  tagline: Explore our journey through the Tekbot Robotics Challenge 2025.
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+
+<Section
+  title="TRC 2025 EPAC <span class='light-text'>The Winners</span>"
+  description="Preparing our robot and team for the Tekbot Robotics Challenge 2025 in Cotonou."
+>
+  <Grid columns={4}>
+    <Card title="Team Expertise" icon="seti:people" iconColor="#FF8585">
+      10 students (Electronics, Software, Mechanics) organized in focused squads with sprint planning.
+    </Card>
+    <Card title="Autonomous Robot" icon="seti:robot" iconColor="#7BE1A4">
+      Navigation, object detection, and low-power control tuned for TRC task challenges.
+    </Card>
+    <Card title="Testing & Validation" icon="seti:wrench" iconColor="#FFD97B">
+      Hardware-in-the-loop, repeated field trials, and CI to ensure reliability under competition stress.
+    </Card>
+    <Card title="Sustainability & Outreach" icon="seti:leaf" iconColor="#979BFF">
+      Recyclable materials, energy-efficient design, and community workshops to promote STEM locally.
+    </Card>
+  </Grid>
+</Section>
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+<Section
+  title="TRC 2025 Journey <span class='light-text'>Our Competition Path</span>"
+  description="Follow our progress from team formation to competition preparation."
+>
+  <HeroTabs>
+    <HeroTabsItem
+       title="Team Formation"
+      subtitle="10 students from EPAC specializing in Electronics, Computer Science, and Mechanics."
+      number={1}
+      image="/src/assets/team-placeholder.png"
+      imageAlt="Team formation"
+    />
+    <HeroTabsItem
+      title="Robot Development"
+      subtitle="Designing and building our robot for the Tekbot Robotics Challenge."
+      number={2}
+      image="/src/assets/robot-placeholder.png"
+      imageAlt="Robot development"
+    />
+    <HeroTabsItem
+      title="Testing & Validation"
+      subtitle="Comprehensive testing of electronic, mechanical, and software systems."
+      number={3}
+      image="/src/assets/step-3.png"
+      imageAlt="Testing phase"
+    />
+  </HeroTabs>
+</Section>
+
+import ThemeDemo from "~/components/ThemeDemo.astro";
+
+<Section
+  title="Our Institution <span class='light-text'>EPAC Excellence</span>"
+  description="Representing the Polytechnic School of Abomey-Calavi in international competition."
+>
+
+
+<ThemeDemo
+  darkImage="/src/assets/epac1.jpg"
+  lightImage="/src/assets/epac-light.png"
+ />
+</Section>
+
+import AccordionContainer from "~/components/AccordionContainer.astro";
+import Accordion from "~/components/Accordion.astro";
+
+<Section
+  title="Competition Details <span class='light-text'>TRC 2025 Information</span>"
+  description="Key information about the Tekbot Robotics Challenge 2025."
+>
+
+<AccordionContainer tabList={
+  [
+    {
+      type: 'competition',
+      title: 'About TRC 2025',
+      subtitle:'Tekbot Robotics Challenge details.',
+      icon: "rocket"
+
+    },
+    {
+      type: 'team',
+      title: 'Our Team Structure',
+      subtitle:'How our 10-member team is organized.',
+      icon: "settings"
+
+    },
+    {
+      type: 'project',
+      title: 'Robot Specifications',
+      subtitle:'Technical details of our robot.',
+      icon: "support"
+
+    }
+
+]
+}>
+
+<Accordion
+  question="What is the Tekbot Robotics Challenge 2025?"
+  answer="TRC 2025 is an international university robotics competition held in Cotonou, Benin. It promotes sustainable innovation and requires teams to demonstrate multidisciplinary skills in electronics, mechanics, programming, and problem-solving."
+  type="competition"
+/>
+<Accordion
+  question="Who are The Winners team?"
+  answer="We are a 10-member team from EPAC (Polytechnic School of Abomey-Calavi), consisting of 4 Electronics specialists, 3 Computer Science experts, and 3 Mechanical engineers, all working together for TRC 2025."
+  type="team"
+/>
+<Accordion
+  question="What are our main objectives?"
+  answer="Our goals include showcasing EPAC's academic excellence, promoting innovation in robotics, strengthening collaborations, enhancing practical skills, and contributing to regional development through technological solutions."
+  type="team"
+/>
+<Accordion
+  question="What technical challenges are we addressing?"
+  answer="Our robot integrates advanced electronics, sophisticated mechanical design, and intelligent programming to meet the competition's requirements for sustainable and innovative robotic solutions."
+  type="project"
+/>
+
+<Accordion
+  question="What programming technologies are we using?"
+  answer="We are utilizing modern embedded programming languages and frameworks optimized for robotics applications, ensuring reliable and efficient robot control systems."
+  type="project"
+/>
+<Accordion
+  question="How do we ensure robot reliability?"
+  answer="Through comprehensive testing phases including electronic circuit validation, mechanical stress testing, and software integration testing to guarantee optimal performance during competition."
+  type="project"
+/>
+<Accordion
+  question="What makes our approach innovative?"
+  answer="We focus on sustainable solutions, multidisciplinary integration, and practical applications that address real-world challenges while maintaining competitive excellence."
+  type="project"
+/>
+<Accordion
+  question="How can I follow our progress?"
+  answer="Stay updated through our documentation site, follow EPAC channels for academic updates, and visit trc.tekbot.io for official competition information."
+  type="project"
+/>
+
+<Accordion
+  question="When is TRC 2025 taking place?"
+  answer="The Tekbot Robotics Challenge 2025 is scheduled to take place in Cotonou, Benin. For exact dates and detailed schedule, please refer to the official competition website."
+  type="competition"
+/>
+<Accordion
+  question="How can I support our team?"
+  answer="You can support us by following our documentation, sharing our progress, and encouraging STEM education initiatives in your community."
+  type="competition"
+/>
+<Accordion
+  question="What happens after TRC 2025?"
+  answer="Regardless of the competition outcome, our experience will contribute to EPAC's ongoing commitment to excellence and will benefit future robotics projects at our institution."
+  type="competition"
+/>
+
+</AccordionContainer>
+
+</Section>
+

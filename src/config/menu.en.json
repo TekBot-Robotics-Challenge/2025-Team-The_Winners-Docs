@@ -1,0 +1,108 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Documentation",
+      "url": "/getting-started/introduction/test1"
+    },
+    {
+      "name": "Team",
+      "url": "/about/team/"
+    },
+    {
+      "name": "About",
+      "url": "/about/introduction/"
+    },
+    {
+      "name": "Media",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Photos",
+          "url": "/media/photos/"
+        },
+        {
+          "name": "Videos",
+          "url": "/media/videos/"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "community": {
+      "title": "Rejoignez notre communauté TRC",
+      "links": [
+        {
+          "name": "GitHub du projet",
+          "url": "https://github.com/thewinners/trc2025"
+        },
+        {
+          "name": "Discord EPAC",
+          "url": "/"
+        },
+        {
+          "name": "Twitter TRC 2025",
+          "url": "/"
+        },
+        {
+          "name": "Contribuez au projet",
+          "url": "/"
+        }
+      ]
+    },
+    "help_links": {
+      "title": "Ressources TRC",
+      "links": [
+        {
+          "name": "Démarrage rapide",
+          "url": "/getting-started/"
+        },
+        {
+          "name": "Spécifications robot",
+          "url": "/robot-specs/"
+        },
+        {
+          "name": "Résultats & démos",
+          "url": "/results/"
+        },
+        {
+          "name": "Guide d'équipe",
+          "url": "/team-guide/"
+        },
+        {
+          "name": "FAQ TRC",
+          "url": "/faq/"
+        }
+      ]
+    },
+    "company": {
+      "title": "À propos",
+      "links": [
+        {
+          "name": "Documentation complète",
+          "url": "/docs/"
+        },
+        {
+          "name": "Galerie photos",
+          "url": "/media/photos/"
+        },
+        {
+          "name": "Meilleures pratiques",
+          "url": "/best-practices/"
+        },
+        {
+          "name": "Performance robot",
+          "url": "/performance/"
+        },
+        {
+          "name": "EPAC officiel",
+          "url": "https://epac.edu.bj/"
+        }
+      ]
+    }
+  }
+}
