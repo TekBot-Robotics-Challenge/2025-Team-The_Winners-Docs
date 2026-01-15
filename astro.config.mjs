@@ -8,6 +8,7 @@ import config from "./src/config/config.json" with { type: "json" };
 import social from "./src/config/social.json";
 import locals from "./src/config/locals.json";
 import sidebar from "./src/config/sidebar.json";
+import { remarkAddBasePath } from "./src/plugins/remark-add-base-path.mjs";
 
 import { fileURLToPath } from "url";
 
@@ -28,6 +29,9 @@ export default defineConfig({
 
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
+  },
+  markdown: {
+    remarkPlugins: [remarkAddBasePath],
   },
   integrations: [
     starlight({
