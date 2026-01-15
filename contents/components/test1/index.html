@@ -1,0 +1,702 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-bguv2lll"> <head><meta charset="utf-8" class="astro-w3bnbjqm"/><meta name="viewport" content="width=device-width, initial-scale=1" class="astro-w3bnbjqm"/><title class="astro-w3bnbjqm">Test 1 | DocKit</title><link rel="canonical" href="https://tekbot-robotics-challenge.github.io/2025-Team-The_Winners-Docs/contents/components/test1/" class="astro-w3bnbjqm"/><link rel="alternate" hreflang="en" href="https://tekbot-robotics-challenge.github.io/2025-Team-The_Winners-Docs/contents/components/test1/" class="astro-w3bnbjqm"/><link rel="alternate" hreflang="de" href="https://tekbot-robotics-challenge.github.io/2025-Team-The_Winners-Docs/de/contents/components/test1/" class="astro-w3bnbjqm"/><link rel="sitemap" href="/2025-Team-The_Winners-Docs/sitemap-index.xml" class="astro-w3bnbjqm"/><link rel="shortcut icon" href="/2025-Team-The_Winners-Docs/favicon.svg" type="image/svg+xml" class="astro-w3bnbjqm"/><meta name="generator" content="Astro v5.16.7" class="astro-w3bnbjqm"/><meta name="generator" content="Starlight v0.36.3" class="astro-w3bnbjqm"/><meta property="og:title" content="Test 1" class="astro-w3bnbjqm"/><meta property="og:type" content="article" class="astro-w3bnbjqm"/><meta property="og:url" content="https://tekbot-robotics-challenge.github.io/2025-Team-The_Winners-Docs/contents/components/test1/" class="astro-w3bnbjqm"/><meta property="og:locale" content="en" class="astro-w3bnbjqm"/><meta property="og:description" content="Documentation of test 1." class="astro-w3bnbjqm"/><meta property="og:site_name" content="DocKit" class="astro-w3bnbjqm"/><meta name="twitter:card" content="summary_large_image" class="astro-w3bnbjqm"/><meta name="description" content="Documentation of test 1." class="astro-w3bnbjqm"/><!-- Chargement simplifié des polaces --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/2025-Team-The_Winners-Docs/_astro/print.DNXP8c50.css" media="print"><link rel="stylesheet" href="/2025-Team-The_Winners-Docs/_astro/index.BROzN-ha.css">
+<style>@layer starlight.components{:root{--sl-badge-default-border: var(--sl-color-accent);--sl-badge-default-bg: var(--sl-color-accent-low);--sl-badge-default-text: #fff;--sl-badge-note-border: var(--sl-color-blue);--sl-badge-note-bg: var(--sl-color-blue-low);--sl-badge-note-text: #fff;--sl-badge-danger-border: var(--sl-color-red);--sl-badge-danger-bg: var(--sl-color-red-low);--sl-badge-danger-text: #fff;--sl-badge-success-border: var(--sl-color-green);--sl-badge-success-bg: var(--sl-color-green-low);--sl-badge-success-text: #fff;--sl-badge-caution-border: var(--sl-color-orange);--sl-badge-caution-bg: var(--sl-color-orange-low);--sl-badge-caution-text: #fff;--sl-badge-tip-border: var(--sl-color-purple);--sl-badge-tip-bg: var(--sl-color-purple-low);--sl-badge-tip-text: #fff}[data-theme=light]:root{--sl-badge-default-bg: var(--sl-color-accent-high);--sl-badge-note-bg: var(--sl-color-blue-high);--sl-badge-danger-bg: var(--sl-color-red-high);--sl-badge-success-bg: var(--sl-color-green-high);--sl-badge-caution-bg: var(--sl-color-orange-high);--sl-badge-tip-bg: var(--sl-color-purple-high)}.sl-badge:where(.astro-avdet4wd){display:inline-block;border:1px solid var(--sl-color-border-badge);border-radius:.25rem;font-family:var(--sl-font-system-mono);line-height:normal;color:var(--sl-color-text-badge);background-color:var(--sl-color-bg-badge);overflow-wrap:anywhere}.sidebar-content .sl-badge:where(.astro-avdet4wd){line-height:1;font-size:var(--sl-text-xs);padding:.125rem .375rem}.sidebar-content a[aria-current=page]>.sl-badge:where(.astro-avdet4wd){--sl-color-bg-badge: transparent;--sl-color-border-badge: currentColor;color:inherit}.default:where(.astro-avdet4wd){--sl-color-bg-badge: var(--sl-badge-default-bg);--sl-color-border-badge: var(--sl-badge-default-border);--sl-color-text-badge: var(--sl-badge-default-text)}.note:where(.astro-avdet4wd){--sl-color-bg-badge: var(--sl-badge-note-bg);--sl-color-border-badge: var(--sl-badge-note-border);--sl-color-text-badge: var(--sl-badge-note-text)}.danger:where(.astro-avdet4wd){--sl-color-bg-badge: var(--sl-badge-danger-bg);--sl-color-border-badge: var(--sl-badge-danger-border);--sl-color-text-badge: var(--sl-badge-danger-text)}.success:where(.astro-avdet4wd){--sl-color-bg-badge: var(--sl-badge-success-bg);--sl-color-border-badge: var(--sl-badge-success-border);--sl-color-text-badge: var(--sl-badge-success-text)}.tip:where(.astro-avdet4wd){--sl-color-bg-badge: var(--sl-badge-tip-bg);--sl-color-border-badge: var(--sl-badge-tip-border);--sl-color-text-badge: var(--sl-badge-tip-text)}.caution:where(.astro-avdet4wd){--sl-color-bg-badge: var(--sl-badge-caution-bg);--sl-color-border-badge: var(--sl-badge-caution-border);--sl-color-text-badge: var(--sl-badge-caution-text)}.small:where(.astro-avdet4wd){font-size:var(--sl-text-xs);padding:.125rem .25rem}.medium:where(.astro-avdet4wd){font-size:var(--sl-text-sm);padding:.175rem .35rem}.large:where(.astro-avdet4wd){font-size:var(--sl-text-base);padding:.225rem .45rem}.sl-markdown-content :is(h1,h2,h3,h4,h5,h6) .sl-badge:where(.astro-avdet4wd){vertical-align:middle}}
+@layer starlight.components{svg:where(.astro-c6vsoqas){color:var(--sl-icon-color);font-size:var(--sl-icon-size, 1em);width:1em;height:1em}}
+@layer starlight.components{starlight-tabs:where(.astro-esqgolmp){display:block}.tablist-wrapper:where(.astro-esqgolmp){overflow-x:auto}:where(.astro-esqgolmp)[role=tablist]{display:flex;list-style:none;border-bottom:2px solid var(--sl-color-gray-5);padding:0}.tab:where(.astro-esqgolmp){display:flex;margin-bottom:-2px}.tab:where(.astro-esqgolmp)>:where(.astro-esqgolmp)[role=tab]{display:flex;align-items:center;gap:.5rem;line-height:var(--sl-line-height-headings);padding:.275rem 1.25rem;text-decoration:none;border-bottom:2px solid var(--sl-color-gray-5);color:var(--sl-color-gray-3);outline-offset:var(--sl-outline-offset-inside);overflow-wrap:initial}.tab:where(.astro-esqgolmp) :where(.astro-esqgolmp)[role=tab][aria-selected=true]{color:var(--sl-color-white);border-color:var(--sl-color-text-accent);font-weight:600}.tablist-wrapper:where(.astro-esqgolmp)~[role=tabpanel]{margin-top:1rem}}
+@layer starlight.components{.sl-steps{--bullet-size: calc(var(--sl-line-height) * 1rem);--bullet-margin: .375rem;list-style:none;counter-reset:steps-counter var(--sl-steps-start, 0);padding-inline-start:0}.sl-steps>li{counter-increment:steps-counter;position:relative;padding-inline-start:calc(var(--bullet-size) + 1rem);padding-bottom:1px;min-height:calc(var(--bullet-size) + var(--bullet-margin))}.sl-steps>li+li{margin-top:0}.sl-steps>li:before{content:counter(steps-counter);position:absolute;top:0;inset-inline-start:0;width:var(--bullet-size);height:var(--bullet-size);line-height:var(--bullet-size);font-size:var(--sl-text-xs);font-weight:600;text-align:center;color:var(--sl-color-white);background-color:var(--sl-color-gray-6);border-radius:99rem;box-shadow:inset 0 0 0 1px var(--sl-color-gray-5)}.sl-steps>li:after{--guide-width: 1px;content:"";position:absolute;top:calc(var(--bullet-size) + var(--bullet-margin));bottom:var(--bullet-margin);inset-inline-start:calc((var(--bullet-size) - var(--guide-width)) / 2);width:var(--guide-width);background-color:var(--sl-color-hairline-light)}}@layer starlight.content{.sl-steps>li>:first-child{--lh: calc(1em * var(--sl-line-height));--shift-y: calc(.5 * (var(--bullet-size) - var(--lh)));transform:translateY(var(--shift-y));margin-bottom:var(--shift-y)}.sl-steps>li>:first-child:where(h1,h2,h3,h4,h5,h6){--lh: calc(1em * var(--sl-line-height-headings))}@supports (--prop: 1lh){.sl-steps>li>:first-child{--lh: 1lh}}}
+</style><script type="module" src="/2025-Team-The_Winners-Docs/_astro/page.B1D-nYk3.js"></script></head> <body class="astro-bguv2lll"> <a href="#_top" class="astro-7q3lir66">Skip to content</a>  <div class="page sl-flex astro-cqnilpoy"> <div class="doc-bg astro-cqnilpoy"> <img src="/2025-Team-The_Winners-Docs/_astro/doc-bg.CXKAUfrL_15see4.png" alt="Documentation Background" loading="eager" decoding="async" fetchpriority="high" width="2000" height="1000" class="hidden dark:block w-full h-full fixed top-0 left-0 astro-cqnilpoy"> </div> <header class="header has-sidebar astro-cqnilpoy"> <nav class="navbar container"> <!-- logo --> <div class="order-0"> <a href="/2025-Team-The_Winners-Docs/" class="navbar-brand inline-block">  <img src="/2025-Team-The_Winners-Docs/_astro/logo-light.B-OAwsTH_19DKCs.svg" alt="DocKit" loading="lazy" decoding="async" fetchpriority="auto" style="height:32px;width:127px" width="254" height="64" class="inline-block  dark:hidden"> <img src="/2025-Team-The_Winners-Docs/_astro/documents.B4fME3Zo_mqWbz.png" alt="DocKit" loading="lazy" decoding="async" fetchpriority="auto" style="height:32px;width:127px" width="254" height="64" class="hidden dark:inline-block"></a> </div> <!-- navbar toggler --> <input id="nav-toggle" type="checkbox" class="hidden"> <label for="nav-toggle" class="order-3 cursor-pointer flex items-center lg:hidden dark:text-white lg:order-1 hamburger-menu"> <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20"> <title>Menu Open</title> <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path> </svg> <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20"> <title>Menu Close</title> <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon> </svg> </label> <!-- /navbar toggler --> <ul id="nav-menu" class="navbar-nav order-3 hidden w-full pb-6 lg:order-1 lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8"> <li class="nav-item"> <a href="/" class="nav-link block false"> Home </a> </li><li class="nav-item"> <a href="/getting-started/introduction/test1" class="nav-link block false"> Documentation </a> </li><li class="nav-item"> <a href="/about/team/" class="nav-link block false"> Team </a> </li><li class="nav-item"> <a href="/about/introduction/" class="nav-link block false"> About </a> </li><li class="nav-item nav-dropdown group relative"> <span class="nav-link flex! gap-1! items-center justify-center "> Media <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"> <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path> </svg> </span> <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"> <li class="nav-dropdown-item"> <a href="/media/photos/" aria-label="Photos" class="nav-dropdown-link block false"> Photos </a> </li><li class="nav-dropdown-item"> <a href="/media/videos/" aria-label="Videos" class="nav-dropdown-link block false"> Videos </a> </li> </ul> </li> <li class="mt-4 inline-block lg:hidden"> <a class="btn btn-outline-primary btn-sm" href="/getting-started/introduction/test1"> Get Started </a> </li> </ul> <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0 navbar-actions">  <div class="theme-switcher mx-6 astro-vke6obp2"><input id="theme-switcher" data-theme-switcher type="checkbox" class="astro-vke6obp2"><label for="theme-switcher" class="astro-vke6obp2"><span class="sr-only astro-vke6obp2">theme switcher</span><svg class="dark:opacity-40 opacity-0 size-4 ml-1 astro-vke6obp2" viewBox="0 0 56 56" fill="#fff" height="16" width="16"><path d="M30 4.6c0-1-.9-2-2-2a2 2 0 0 0-2 2v5c0 1 .9 2 2 2s2-1 2-2Zm9.6 9a2 2 0 0 0 0 2.8c.8.8 2 .8 2.9 0L46 13a2 2 0 0 0 0-2.9 2 2 0 0 0-3 0Zm-26 2.8c.7.8 2 .8 2.8 0 .8-.7.8-2 0-2.9L13 10c-.7-.7-2-.8-2.9 0-.7.8-.7 2.1 0 3ZM28 16a12 12 0 0 0-12 12 12 12 0 0 0 12 12 12 12 0 0 0 12-12 12 12 0 0 0-12-12Zm23.3 14c1.1 0 2-.9 2-2s-.9-2-2-2h-4.9a2 2 0 0 0-2 2c0 1.1 1 2 2 2ZM4.7 26a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4.9c1 0 2-.9 2-2s-1-2-2-2Zm37.8 13.6a2 2 0 0 0-3 0 2 2 0 0 0 0 2.9l3.6 3.5a2 2 0 0 0 2.9 0c.8-.8.8-2.1 0-3ZM10 43.1a2 2 0 0 0 0 2.9c.8.7 2.1.8 3 0l3.4-3.5c.8-.8.8-2.1 0-2.9-.8-.8-2-.8-2.9 0Zm20 3.4c0-1.1-.9-2-2-2a2 2 0 0 0-2 2v4.9c0 1 .9 2 2 2s2-1 2-2Z" class="astro-vke6obp2"></path></svg><span class="astro-vke6obp2"><svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-100 dark:opacity-0 astro-vke6obp2" viewBox="0 0 56 56" fill="#fff" height="16" width="16"><path d="M30 4.6c0-1-.9-2-2-2a2 2 0 0 0-2 2v5c0 1 .9 2 2 2s2-1 2-2Zm9.6 9a2 2 0 0 0 0 2.8c.8.8 2 .8 2.9 0L46 13a2 2 0 0 0 0-2.9 2 2 0 0 0-3 0Zm-26 2.8c.7.8 2 .8 2.8 0 .8-.7.8-2 0-2.9L13 10c-.7-.7-2-.8-2.9 0-.7.8-.7 2.1 0 3ZM28 16a12 12 0 0 0-12 12 12 12 0 0 0 12 12 12 12 0 0 0 12-12 12 12 0 0 0-12-12Zm23.3 14c1.1 0 2-.9 2-2s-.9-2-2-2h-4.9a2 2 0 0 0-2 2c0 1.1 1 2 2 2ZM4.7 26a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4.9c1 0 2-.9 2-2s-1-2-2-2Zm37.8 13.6a2 2 0 0 0-3 0 2 2 0 0 0 0 2.9l3.6 3.5a2 2 0 0 0 2.9 0c.8-.8.8-2.1 0-3ZM10 43.1a2 2 0 0 0 0 2.9c.8.7 2.1.8 3 0l3.4-3.5c.8-.8.8-2.1 0-2.9-.8-.8-2-.8-2.9 0Zm20 3.4c0-1.1-.9-2-2-2a2 2 0 0 0-2 2v4.9c0 1 .9 2 2 2s2-1 2-2Z" class="astro-vke6obp2"></path></svg><svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 opacity-0 dark:opacity-100 astro-vke6obp2" viewBox="0 0 24 24" fill="none" height="16" width="16"><path fill="#000" fill-rule="evenodd" clip-rule="evenodd" d="M8.2 2.2c1-.4 2 .6 1.6 1.5-1 3-.4 6.4 1.8 8.7a8.4 8.4 0 0 0 8.7 1.8c1-.3 2 .5 1.5 1.5v.1a10.3 10.3 0 0 1-9.4 6.2A10.3 10.3 0 0 1 3.2 6.7c1-2 2.9-3.5 4.9-4.4Z" class="astro-vke6obp2"></path></svg></span><svg class="opacity-40 size-4 dark:opacity-0 mr-1 astro-vke6obp2" viewBox="0 0 24 24" fill="none" height="16" width="16"><path fill="#000" fill-rule="evenodd" clip-rule="evenodd" d="M8.2 2.2c1-.4 2 .6 1.6 1.5-1 3-.4 6.4 1.8 8.7a8.4 8.4 0 0 0 8.7 1.8c1-.3 2 .5 1.5 1.5v.1a10.3 10.3 0 0 1-9.4 6.2A10.3 10.3 0 0 1 3.2 6.7c1-2 2.9-3.5 4.9-4.4Z" class="astro-vke6obp2"></path></svg></label></div><script type="module">const e=document.querySelector("input[data-theme-switcher]");e?.addEventListener("change",t=>{t.currentTarget.checked?(document.documentElement.dataset.theme="dark",localStorage.setItem("starlight-theme","dark")):(document.documentElement.dataset.theme="light",localStorage.setItem("starlight-theme","light"))});document.addEventListener("DOMContentLoaded",()=>{localStorage.getItem("starlight-theme")==="light"?(e.checked=!1,document.documentElement.dataset.theme="light"):(e.checked=!0,document.documentElement.dataset.theme="dark")});</script> <a class="btn btn-outline-primary hidden! lg:inline-block!" href="/getting-started/introduction/test1"> Get Started </a> </div> </nav> <script type="module">const e=document.querySelector(".navbar"),o=document.querySelector(".sidebar-nav");window.onscroll=function(){document.body.scrollTop>10||document.documentElement.scrollTop>10?(e?.parentElement?.classList.add("navbar-scrolled"),o?.classList.add("navbar-scrolled")):(e?.parentElement?.classList.remove("navbar-scrolled"),o?.classList.remove("navbar-scrolled"))};const s=document.querySelectorAll(".nav-dropdown > .nav-link");s.forEach(n=>{n?.addEventListener("click",l=>{l?.target?.closest(".nav-item")?.classList.toggle("active")})});</script> </header> <div class="sidebar-nav astro-gvqsdny3"> <div class="container h-full astro-gvqsdny3"> <div class="sidebar-content-top astro-gvqsdny3"> <ul class="astro-gvqsdny3"> <li class="astro-gvqsdny3"> <a aria-label="About" href="/2025-Team-The_Winners-Docs/about/introduction/" class=" astro-gvqsdny3"> About </a> </li><li class="astro-gvqsdny3"> <a aria-label="Media" href="/2025-Team-The_Winners-Docs/media/photos/" class=" astro-gvqsdny3"> Media </a> </li><li class="astro-gvqsdny3"> <a aria-label="IT" href="/2025-Team-The_Winners-Docs/getting-started/introduction/test1/" class=" astro-gvqsdny3"> IT </a> </li><li class="astro-gvqsdny3"> <a aria-label="Electronic" href="/2025-Team-The_Winners-Docs/contents/components/test1/" class="active astro-gvqsdny3"> Electronic </a> </li><li class="astro-gvqsdny3"> <a aria-label="Mechanic" href="/2025-Team-The_Winners-Docs/reference/test-de-preselection/test1/" class=" astro-gvqsdny3"> Mechanic </a> </li> </ul> <div class="astro-gvqsdny3"> <starlight-lang-select><label style="--sl-select-width: 7em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select language</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path fill-rule="evenodd" d="M8.516 3a.94.94 0 0 0-.941.94v1.15H2.94a.94.94 0 1 0 0 1.882h7.362a7.422 7.422 0 0 1-1.787 3.958 7.42 7.42 0 0 1-1.422-2.425.94.94 0 1 0-1.774.627 9.303 9.303 0 0 0 1.785 3.043 7.422 7.422 0 0 1-4.164 1.278.94.94 0 1 0 0 1.881 9.303 9.303 0 0 0 5.575-1.855 9.303 9.303 0 0 0 4.11 1.74l-.763 1.525a.968.968 0 0 0-.016.034l-1.385 2.77a.94.94 0 1 0 1.683.841l1.133-2.267h5.806l1.134 2.267a.94.94 0 0 0 1.683-.841l-1.385-2.769a.95.95 0 0 0-.018-.036l-3.476-6.951a.94.94 0 0 0-1.682 0l-1.82 3.639a7.423 7.423 0 0 1-3.593-1.256 9.303 9.303 0 0 0 2.27-5.203h1.894a.94.94 0 0 0 0-1.881H9.456V3.94A.94.94 0 0 0 8.516 3Zm6.426 11.794a1.068 1.068 0 0 1-.02.039l-.703 1.407h3.924l-1.962-3.924-1.24 2.478Z" clip-rule="evenodd"/></svg> <select autocomplete="off" class="astro-4yphtoen"> <option value="/2025-Team-The_Winners-Docs/contents/components/test1/" class="astro-4yphtoen">English</option><option value="/2025-Team-The_Winners-Docs/de/contents/components/test1/" class="astro-4yphtoen">Deutsch</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label> </starlight-lang-select><script type="module">class s extends HTMLElement{constructor(){super();const e=this.querySelector("select");e&&(e.addEventListener("change",t=>{t.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=t.currentTarget.value)}),window.addEventListener("pageshow",t=>{if(!t.persisted)return;const n=e.querySelector("option[selected]")?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}}customElements.define("starlight-lang-select",s);</script> </div> </div> </div> </div>  <div class="main-frame astro-cqnilpoy"> <div class="container flex relative astro-cqnilpoy"> <nav class="sidebar print:hidden astro-cqnilpoy" aria-label="Main"> <starlight-menu-button class="print:hidden astro-36e7ehj6"> <button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-36e7ehj6"> <svg aria-hidden="true" class="open-menu astro-36e7ehj6 astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg> <svg aria-hidden="true" class="close-menu astro-36e7ehj6 astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg> </button> </starlight-menu-button> <script type="module">class s extends HTMLElement{btn=this.querySelector("button");constructor(){super(),this.btn.addEventListener("click",()=>this.toggleExpanded());const t=this.closest("nav");t&&t.addEventListener("keyup",e=>this.closeOnEscape(e))}setExpanded(t){this.setAttribute("aria-expanded",String(t)),document.body.toggleAttribute("data-mobile-menu-expanded",t)}toggleExpanded(){this.setExpanded(this.getAttribute("aria-expanded")!=="true")}closeOnEscape(t){t.code==="Escape"&&(this.setExpanded(!1),this.btn.focus())}}customElements.define("starlight-menu-button",s);</script>   <div id="starlight__sidebar" class="sidebar-pane astro-cqnilpoy"> <div class="sidebar-content sl-flex astro-cqnilpoy"> <sl-sidebar-state-persist data-hash="0c5hqru" class="astro-kku4brbg"> <script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script>  <ul class="top-level astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="0"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">About</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/about/introduction/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Introduction</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/about/team/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Team</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/about/goals/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Objectives</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/about/college/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">College</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/about/contacts/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Contacts</span>  </a> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="1"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">Media</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/media/photos/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Photos</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/media/videos/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Videos</span>  </a> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="2"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">IT</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="3"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv"> <svg aria-hidden="true" class="mr-2.5 astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.3rem;"><path d="M16.232 0.179L16.232 0.179L6.392 2.139Q6.152 2.179 6.112 2.459L6.112 2.459L5.512 12.659Q5.512 12.859 5.652 12.979Q5.792 13.099 5.952 13.059L5.952 13.059L8.672 12.419Q8.872 12.379 9.012 12.519Q9.152 12.659 9.112 12.819L9.112 12.819L8.312 16.819Q8.272 17.019 8.432 17.159Q8.592 17.299 8.752 17.219L8.752 17.219L10.472 16.699Q10.672 16.659 10.812 16.799Q10.952 16.939 10.912 17.139L10.912 17.139L9.632 23.379Q9.552 23.699 9.832 23.799Q10.112 23.899 10.272 23.659L10.272 23.659L10.432 23.419L18.432 7.459Q18.552 7.259 18.412 7.079Q18.272 6.899 18.032 6.939L18.032 6.939L15.232 7.459Q15.032 7.499 14.892 7.359Q14.752 7.219 14.832 7.019L14.832 7.019L16.672 0.659Q16.712 0.459 16.572 0.299Q16.432 0.139 16.232 0.179Z"/></svg> <span class="large astro-bw5pq3tv">Preselection Test</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/getting-started/introduction/test1/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">IT 1rst Test - Object-Oriented Robot Management</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/getting-started/introduction/test2/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">2nd Test - ROS2 Publisher/Subscriber</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/getting-started/introduction/test3/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">3rd Test - Autonomous Navigation with Pathfinding Algorithm (ROS2 + Gazebo)</span>  </a> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="4"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv"> <svg aria-hidden="true" class="mr-2.5 astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.3rem;"><path d="m21.32 9.55-1.89-.63.89-1.78A1 1 0 0 0 20.13 6L18 3.87a1 1 0 0 0-1.15-.19l-1.78.89-.63-1.89A1 1 0 0 0 13.5 2h-3a1 1 0 0 0-.95.68l-.63 1.89-1.78-.89A1 1 0 0 0 6 3.87L3.87 6a1 1 0 0 0-.19 1.15l.89 1.78-1.89.63a1 1 0 0 0-.68.94v3a1 1 0 0 0 .68.95l1.89.63-.89 1.78A1 1 0 0 0 3.87 18L6 20.13a1 1 0 0 0 1.15.19l1.78-.89.63 1.89a1 1 0 0 0 .95.68h3a1 1 0 0 0 .95-.68l.63-1.89 1.78.89a1 1 0 0 0 1.13-.19L20.13 18a1 1 0 0 0 .19-1.15l-.89-1.78 1.89-.63a1 1 0 0 0 .68-.94v-3a1 1 0 0 0-.68-.95ZM20 12.78l-1.2.4A2 2 0 0 0 17.64 16l.57 1.14-1.1 1.1-1.11-.6a2 2 0 0 0-2.79 1.16l-.4 1.2h-1.59l-.4-1.2A2 2 0 0 0 8 17.64l-1.14.57-1.1-1.1.6-1.11a2 2 0 0 0-1.16-2.82l-1.2-.4v-1.56l1.2-.4A2 2 0 0 0 6.36 8l-.57-1.11 1.1-1.1L8 6.36a2 2 0 0 0 2.82-1.16l.4-1.2h1.56l.4 1.2A2 2 0 0 0 16 6.36l1.14-.57 1.1 1.1-.6 1.11a2 2 0 0 0 1.16 2.79l1.2.4v1.59ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg> <span class="large astro-bw5pq3tv">Test Final</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/getting-started/global-settings/computer/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Computer Science Test Final</span>  </a> </li> </ul>   </details> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="5"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">Electronic</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="6"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv"> <svg aria-hidden="true" class="mr-2.5 astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-color: var(--color-primary);--sl-icon-size: 1.3rem;"><path d="M9 10h1a1 1 0 1 0 0-2H9a1 1 0 0 0 0 2Zm0 2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H9Zm11-3.06a1.3 1.3 0 0 0-.06-.27v-.09c-.05-.1-.11-.2-.19-.28l-6-6a1.07 1.07 0 0 0-.28-.19h-.09a.88.88 0 0 0-.33-.11H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8.94Zm-6-3.53L16.59 8H15a1 1 0 0 1-1-1V5.41ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5v3a3 3 0 0 0 3 3h3v9Zm-3-3H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></svg> <span class="large astro-bw5pq3tv">Preselection Test</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/contents/components/test1/" aria-current="page" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Test 1</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/contents/components/test2/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Test 2</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/contents/components/test3/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Test 3</span>  </a> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/contents/editing/electronic/" aria-current="false" class="astro-bw5pq3tv"> <svg aria-hidden="true" class="mr-2.5 astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.3rem;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg> <span class="astro-bw5pq3tv">Test Final</span>  </a> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="7"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">Mechanic</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="8"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">Test de Preselection</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/reference/test-de-preselection/test1/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Test 1</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/reference/test-de-preselection/test2/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Test 2</span>  </a> </li><li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/reference/test-de-preselection/test3/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Test 3</span>  </a> </li> </ul>   </details> </li><li class="astro-bw5pq3tv"> <details open class="astro-bw5pq3tv"> <sl-sidebar-restore data-index="9"></sl-sidebar-restore> <summary class="astro-bw5pq3tv"> <span class="group-label astro-bw5pq3tv">  <span class="large astro-bw5pq3tv">Test Final</span>  </span> <svg aria-hidden="true" class="caret astro-bw5pq3tv astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </summary> <ul class="astro-bw5pq3tv"> <li class="astro-bw5pq3tv"> <a href="/2025-Team-The_Winners-Docs/reference/test-final/mechanic/" aria-current="false" class="astro-bw5pq3tv">  <span class="astro-bw5pq3tv">Mechanic</span>  </a> </li> </ul>   </details> </li> </ul>   </details> </li> </ul>  <script type="module">function n(){document.querySelectorAll(".sidebar-content .top-level > li").forEach(o=>{const e=o.querySelector("details");if(e){e.open=!0;const t=e.querySelector("summary");t&&t.addEventListener("click",l=>{l.preventDefault()}),e.addEventListener("toggle",()=>{e.open||(e.open=!0)})}})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",n):n();</script>  <script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="social-icons astro-wu23bvmt"> <a href="https://www.facebook.com/" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">Facebook</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4 20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2Z"/></svg></a><a href="https://slack.com/" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">Slack</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52Zm1.271 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313ZM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834Zm0 1.271a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312Zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834Zm-1.268 0a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312Zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52Zm0-1.268a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313Z"/></svg></a><a href="https://www.github.com/" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg></a><a href="https://www.linkedin.com/" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">LinkedIn</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3v9ZM6.59 8.48a1.56 1.56 0 0 1 0-3.12 1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06v5.18Z"/></svg></a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> <select autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script> <script type="module">const r="starlight-theme",o=e=>e==="auto"||e==="dark"||e==="light"?e:"auto",c=()=>o(typeof localStorage<"u"&&localStorage.getItem(r));function n(e){typeof localStorage<"u"&&localStorage.setItem(r,e==="light"||e==="dark"?e:"")}const l=()=>matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";function t(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e==="auto"?l():e,n(e)}matchMedia("(prefers-color-scheme: light)").addEventListener("change",()=>{c()==="auto"&&t("auto")});class s extends HTMLElement{constructor(){super(),t(c()),this.querySelector("select")?.addEventListener("change",a=>{a.currentTarget instanceof HTMLSelectElement&&t(o(a.currentTarget.value))})}}customElements.define("starlight-theme-select",s);</script> <starlight-lang-select><label style="--sl-select-width: 7em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select language</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path fill-rule="evenodd" d="M8.516 3a.94.94 0 0 0-.941.94v1.15H2.94a.94.94 0 1 0 0 1.882h7.362a7.422 7.422 0 0 1-1.787 3.958 7.42 7.42 0 0 1-1.422-2.425.94.94 0 1 0-1.774.627 9.303 9.303 0 0 0 1.785 3.043 7.422 7.422 0 0 1-4.164 1.278.94.94 0 1 0 0 1.881 9.303 9.303 0 0 0 5.575-1.855 9.303 9.303 0 0 0 4.11 1.74l-.763 1.525a.968.968 0 0 0-.016.034l-1.385 2.77a.94.94 0 1 0 1.683.841l1.133-2.267h5.806l1.134 2.267a.94.94 0 0 0 1.683-.841l-1.385-2.769a.95.95 0 0 0-.018-.036l-3.476-6.951a.94.94 0 0 0-1.682 0l-1.82 3.639a7.423 7.423 0 0 1-3.593-1.256 9.303 9.303 0 0 0 2.27-5.203h1.894a.94.94 0 0 0 0-1.881H9.456V3.94A.94.94 0 0 0 8.516 3Zm6.426 11.794a1.068 1.068 0 0 1-.02.039l-.703 1.407h3.924l-1.962-3.924-1.24 2.478Z" clip-rule="evenodd"/></svg> <select autocomplete="off" class="astro-4yphtoen"> <option value="/2025-Team-The_Winners-Docs/contents/components/test1/" class="astro-4yphtoen">English</option><option value="/2025-Team-The_Winners-Docs/de/contents/components/test1/" class="astro-4yphtoen">Deutsch</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label> </starlight-lang-select> </div>  </div> </div> </div> </nav>   <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="content-container astro-ik4k6pip"> <div class="main-pane astro-ik4k6pip"> <div class="breadcrumb-container astro-ik4k6pip"> <div class="breadcrumb astro-qaanghzh"> <ul class="astro-qaanghzh"> <li class="astro-qaanghzh">2025 Team The_Winners Docs</li><li class="astro-qaanghzh">contents</li><li class="astro-qaanghzh">components</li><li class="astro-qaanghzh">test1</li> </ul> </div>  </div>   <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-p5qdsdza"> <div class="sl-container astro-p5qdsdza"> <h1 id="_top" class="astro-j6tvhyss">Test 1</h1>  </div> </div>  <div class="content-panel astro-p5qdsdza"> <div class="sl-container astro-p5qdsdza"> <div class="sl-markdown-content"> <div class="sl-heading-wrapper level-h1"><h1 id="1rst-test">1rst Test</h1><a class="sl-anchor-link" href="#1rst-test"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “1rst Test”</span></a></div>
+<div align="justify">
+<div class="sl-heading-wrapper level-h2"><h2 id="ojectives">Ojectives</h2><a class="sl-anchor-link" href="#ojectives"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Ojectives”</span></a></div>
+<ol>
+<li>
+<p><strong>Dimension a Suitable Power Supply</strong></p>
+<ul>
+<li>Analyze voltage and current requirements for all components.</li>
+<li>Design and build a reliable power source to independently supply the circuit (e.g., battery with voltage regulation).</li>
+</ul>
+</li>
+<li>
+<p><strong>Implement and Utilize an Inertial Sensor (Gyroscope + Accelerometer)</strong></p>
+<ul>
+<li>Select an I2C-capable inertial measurement unit (e.g., MPU6050).</li>
+<li>Understand its operating principles and process orientation and motion data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-Time Interpretation and Display of Motion Data</strong></p>
+<ul>
+<li>Detect directional hand movements and measure acceleration.</li>
+<li>Display results dynamically on an LCD and optionally through the serial monitor.</li>
+</ul>
+</li>
+</ol>
+<div class="sl-heading-wrapper level-h2"><h2 id="summary">Summary</h2><a class="sl-anchor-link" href="#summary"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Summary”</span></a></div>
+<p>Access the kicad and arduino files by clicking <a href="https://github.com/TekBot-Robotics-Challenge/2025-Team-The_Winners-Docs/tree/main/Tekbot_The_Winners/electonic/test1">here</a>.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="materials">Materials</h2><a class="sl-anchor-link" href="#materials"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Materials”</span></a></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="proccess">Proccess</h2><a class="sl-anchor-link" href="#proccess"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Proccess”</span></a></div>
+<div class="sl-heading-wrapper level-h3"><h3 id="power-supply-design">Power Supply Design</h3><a class="sl-anchor-link" href="#power-supply-design"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Power Supply Design”</span></a></div>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="system-overview">System Overview</h4><a class="sl-anchor-link" href="#system-overview"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “System Overview”</span></a></div>
+<p><img src="/img/circuit.png" alt="Power Circuit"></p>
+<p>A custom-designed power supply built around a <strong>220V to 15V transformer</strong>, <strong>bridge rectifier</strong>, <strong>filtering capacitor</strong>, and a <strong>buck regulator (LM2596-5)</strong>, with added <strong>current limiting circuitry</strong> and <strong>visual indicators</strong>.</p>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="transformer">Transformer</h4><a class="sl-anchor-link" href="#transformer"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Transformer”</span></a></div>
+<ul>
+<li>
+<p><strong>Transformer</strong>: 220V/15V – 30VA</p>
+</li>
+<li>
+<p><strong>Current Output</strong>:</p>
+<p>I<sub>2</sub> = 30VA / 15V = 2A</p>
+</li>
+<li>
+<p>Provides galvanic isolation and sufficient power for the system.</p>
+</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="rectifier">Rectifier</h4><a class="sl-anchor-link" href="#rectifier"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Rectifier”</span></a></div>
+<ul>
+<li><strong>Type</strong>: Full-wave bridge</li>
+<li><strong>Specs</strong>: 3A average current, ≥ 21.21V reverse voltage</li>
+<li><strong>Component</strong>: 3A/400V molded rectifier (recycled from a PC PSU)</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="filter-capacitor">Filter Capacitor</h4><a class="sl-anchor-link" href="#filter-capacitor"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Filter Capacitor”</span></a></div>
+<ul>
+<li>
+<p><strong>Target Ripple (∆Ve)</strong>: 3.5V</p>
+</li>
+<li>
+<p><strong>Worst-case current</strong>: 2.01A</p>
+</li>
+<li>
+<p><strong>Calculation</strong>:</p>
+<p>C = 2.01 / (100 x 3.5) ≈ 6483.9 µF</p>
+</li>
+<li>
+<p><strong>Used</strong> : 4700µF + 3300µF = 8000µF / 25V</p>
+</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="regulation">Regulation</h4><a class="sl-anchor-link" href="#regulation"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Regulation”</span></a></div>
+<p><strong>—> LM7805 Limitations</strong></p>
+<ul>
+<li>Max 1.5A output → insufficient</li>
+<li>High heat dissipation → requires heatsink</li>
+</ul>
+<p><strong>—> LM2596-5 Buck Converter</strong></p>
+<ul>
+<li><strong>Max current</strong>: 3A</li>
+<li><strong>Current-limited</strong> externally to 2A</li>
+<li><strong>Efficient</strong> with minimal heat → no heatsink needed</li>
+<li><strong>Module includes</strong>: regulator, capacitors, diode, and inductor</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="led-indicator">LED Indicator</h4><a class="sl-anchor-link" href="#led-indicator"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “LED Indicator”</span></a></div>
+<ul>
+<li>
+<p><strong>LED Specs</strong>: 2.1V @ 20mA</p>
+</li>
+<li>
+<p><strong>Resistor value</strong>:</p>
+<p>R = (5V - 2.1V) / (0.02A) = 145Ω</p>
+</li>
+</ul>
+<p>Use <strong>R = 150Ω (E24 standard)</strong></p>
+<ul>
+<li>
+<p><strong>Power dissipated</strong>:</p>
+<p>P = R.I<sup>2</sup> = 145 / (0.02)<sup>2</sup> = 58mW</p>
+</li>
+</ul>
+<p>Use 1/4W resistor</p>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="current-limiting-cell">Current Limiting Cell</h4><a class="sl-anchor-link" href="#current-limiting-cell"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Current Limiting Cell”</span></a></div>
+<p><img src="/img/me0.png" alt="Limiter Circuit"></p>
+<ul>
+<li>
+<p><strong>Components</strong>:</p>
+<ul>
+<li>Transistor: 2N2222</li>
+<li>Optocoupler: PC817</li>
+<li>Shunt Resistor: R4 = 0.35Ω</li>
+</ul>
+</li>
+<li>
+<p><strong>Operation</strong>:</p>
+<ul>
+<li>Below 2A → regulator ON</li>
+<li>≥ 2A → Q1 conducts → optocoupler cuts off LM2596 via ON/OFF pin</li>
+</ul>
+</li>
+<li>
+<p><strong>R3 Calculation</strong>:</p>
+<p>R<sub>3</sub> = (12.5V - 1.2V - 0.2V) / 0.02A ≈ 555Ω</p>
+</li>
+</ul>
+<p>Use 600Ω, 1/4W</p>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="implementation-photos">Implementation Photos</h4><a class="sl-anchor-link" href="#implementation-photos"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Implementation Photos”</span></a></div>
+<p><img src="/img/me41.jpg" alt="Power Supply Side View"><br>
+<img src="/img/me42.jpg" alt="Power Supply Side View"></p>
+<br>
+<div class="sl-heading-wrapper level-h2"><h2 id="implementation-of-the-navigation-system">Implementation of the Navigation System</h2><a class="sl-anchor-link" href="#implementation-of-the-navigation-system"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Implementation of the Navigation System”</span></a></div>
+<p>The aim of this documentation is to provide an exhaustive description of the technical approach taken to testing the gyroscope and accelerometer. It details the selection and wiring of the hardware, the design of the code, the test procedure implemented, and the in-depth analysis of the results obtained. More than a simple report, this document is intended to serve as a technical reference for members of the electronics, mechanics and IT team, facilitating understanding and multidisciplinary collaboration. This document is also intended to serve as a technical reference for anyone wishing to work on a similar project, so as not to reinvent the wheel, as the saying goes, but to build on what already exists and add the desired new features.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="description-of-materials-used">Description of Materials Used</h3><a class="sl-anchor-link" href="#description-of-materials-used"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Description of Materials Used”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="microcontroller--development-board">Microcontroller &#x26; Development Board</h4><a class="sl-anchor-link" href="#microcontroller--development-board"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Microcontroller &#x26; Development Board”</span></a></div>
+<p>The heart of our gyroscope and accelerometer test system is based on the <strong>Arduino Uno R3</strong> board, a microcontroller development platform widely adopted for its <strong>ease of use</strong> and <strong>versatility</strong>.</p>
+<p>This board integrates the <strong>Atmel ATmega328P</strong> microcontroller, a key component for <strong>I/O management</strong> and <strong>sensor data processing</strong>.</p>
+<p><img src="/img/me1.png" alt="Img1"></p>
+<p>---> <strong>Microcontroller</strong></p>
+<ul>
+<li><strong>Model</strong>: Atmel ATmega328P</li>
+<li><strong>Architecture</strong>: 8-bit AVR</li>
+<li><strong>Clock Frequency</strong>: 16 MHz (quartz oscillator), providing sufficient processing capacity for inertial sensor data acquisition and processing tasks.</li>
+</ul>
+<p>---> <strong>Memory</strong></p>
+<ul>
+<li><strong>Flash Memory</strong>: 32 KB (including 0.5 KB used by the bootloader), for storing the control program.</li>
+<li><strong>SRAM (Static RAM)</strong>: 2 KB, for temporary storage of variables and processed data (such as sensor readings).</li>
+<li><strong>EEPROM</strong>: 1 KB, for persistent storage of data (configurations, calibrations) that need to be retained even after a power failure.</li>
+</ul>
+<p>---> <strong>Power Specifications</strong></p>
+<ul>
+<li><strong>Operating Voltage</strong>: 5V</li>
+<li><strong>Supply Voltage (Recommended)</strong>: 7-12V (via jack or VIN pin), allowing flexible powering of the board from various sources (battery, AC adapter).</li>
+</ul>
+<p>---> <strong>I/O Pins</strong></p>
+<ul>
+<li><strong>Digital I/O</strong>: 14 digital pins (6 of which can be used as PWM outputs).
+<ul>
+<li>Essential for communication with various peripherals and actuators.</li>
+<li>Mainly used for <strong>serial communication</strong> and <strong>I2C interfacing</strong> in this test.</li>
+</ul>
+</li>
+<li><strong>Analog I/O</strong>: 6 analog input pins.
+<ul>
+<li>Useful for reading analog sensors.</li>
+<li>Less critical for the <strong>MPU6050</strong>, which communicates digitally.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Communication Interfaces</strong></p>
+<ul>
+<li><strong>I2C (TWI)</strong>: Present on pins <strong>A4 (SDA)</strong> and <strong>A5 (SCL)</strong>, essential for communication with the <strong>gyro/accelerometer module (MPU6050)</strong>.</li>
+<li><strong>SPI</strong>: Supported on pins <strong>10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK)</strong>.</li>
+<li><strong>UART (Serial)</strong>: Via pins <strong>0 (RX)</strong> and <strong>1 (TX)</strong>, used for communication with the computer via the <strong>serial monitor</strong> (for debugging and data display).</li>
+<li><strong>USB Connectivity</strong>: USB-B port for programming and serial communication with a computer.</li>
+</ul>
+<p>---> <strong>Bootloader</strong></p>
+<ul>
+<li><strong>Pre-installed</strong>, allowing easy program uploads via the <strong>USB port</strong> without requiring an external programmer.</li>
+</ul>
+<p>---> <strong>Why Arduino Uno ?</strong></p>
+<p>The <strong>Arduino Uno</strong> was chosen for its <strong>robustness</strong>, <strong>abundant documentation</strong>, and <strong>active community</strong>, making prototyping and rapid debugging of sensor interactions much easier.<br>
+Its <strong>5V operating voltage</strong> and the availability of the <strong>I2C interface</strong> via dedicated pins (<strong>A4, A5</strong>) make it an <strong>ideal platform</strong> for this initial test.</p>
+<br>
+<div class="sl-heading-wrapper level-h4"><h4 id="lcd-screen">LCD Screen</h4><a class="sl-anchor-link" href="#lcd-screen"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “LCD Screen”</span></a></div>
+<p>To provide instant and clear visual feedback on the movements detected by the MPU6050, we have integrated a 16x2 LCD display (16 characters on 2 lines) with an I2C interface module. This type of display combines a standard LCD display with an extension module based on the PCF8574 integrated circuit, greatly facilitating its interfacing with the microcontroller.</p>
+<p><img src="/img/me2.jpg" alt="Img1"></p>
+<p>---> <strong>Key Features and Benefits of the I2C LCD Display</strong></p>
+<ul>
+<li>
+<p><strong>Simplified I2C Interface</strong></p>
+<ul>
+<li>The main advantage of this module is its ability to communicate via the <strong>I2C protocol</strong>.</li>
+<li>This significantly reduces the number of pins required on the <strong>Arduino Uno</strong> to control the display (from <strong>7–11 pins</strong> in parallel mode to just <strong>two: SDA and SCL</strong>).</li>
+<li>Frees up valuable pins for other <strong>sensors or actuators</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Character and Message Display</strong></p>
+<ul>
+<li>The display can show <strong>alphanumeric text, numbers, and special characters</strong>.</li>
+<li>Ideal for displaying <strong>status messages</strong>, <strong>motion directions</strong> (‘FORWARD’, ‘UP’, etc.), or <strong>sensor values</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Custom Characters</strong></p>
+<ul>
+<li>The <strong>LiquidCrystal_I2C.h</strong> library enables the creation and display of <strong>custom characters</strong>, such as <strong>arrow icons</strong>.</li>
+<li>This enhances the <strong>intuitiveness</strong> and <strong>visual appeal</strong> of movement direction displays.</li>
+</ul>
+</li>
+<li>
+<p><strong>Backlight Control</strong></p>
+<ul>
+<li>The I2C module features an <strong>integrated LED backlight</strong>, which can be <strong>activated or deactivated via software</strong>.</li>
+<li>Improves readability in different <strong>lighting conditions</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Contrast Potentiometer</strong></p>
+<ul>
+<li>A <strong>potentiometer</strong> is present on the I2C module, allowing <strong>manual adjustment</strong> of display contrast for <strong>optimal visibility</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>I2C Address</strong></p>
+<ul>
+<li>The display communicates via a <strong>specific I2C address</strong> (frequently <strong>0x27</strong> or <strong>0x3F</strong>).</li>
+<li>This address is <strong>configured in the code</strong> to ensure correct communication with the <strong>Arduino</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Supply Voltage</strong></p>
+<ul>
+<li>The module operates at <strong>5V</strong>, making it <strong>directly compatible</strong> with the <strong>Arduino Uno’s supply output</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Integration Benefits</strong></p>
+<p>The integration of this <strong>I2C LCD display</strong> provides an <strong>essential on-board user interface</strong>, enabling <strong>real-time motion detection results</strong> without requiring a <strong>computer connection</strong>.<br>
+It enhances the <strong>testing and demonstration experience</strong> of the system.</p>
+<p>For a more in-depth understanding of <strong>I2C LCDs</strong>, including wiring and functionality, refer to the following detailed tutorial:<br>
+<a href="https://lastminuteengineers.com/i2c-lcd-arduino-tutorial/">Last Minute Engineers - I2C LCD Arduino Tutorial</a></p>
+<br>
+<div class="sl-heading-wrapper level-h4"><h4 id="mpu6050">MPU6050</h4><a class="sl-anchor-link" href="#mpu6050"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “MPU6050”</span></a></div>
+<p><img src="/img/me3.jpg" alt="Img1"></p>
+<p>As kids, the gyroscopes at the science fair never failed to amaze us because they moved in strange ways and even seemed to defy gravity. Their unique properties make them crucial in everything from small RC helicopters to the advanced navigation system on the space shuttle.</p>
+<p>In recent years, ingenious engineers have successfully developed micromachined gyroscopes. These MEMS (microelectromechanical system) gyroscopes have paved the way for an entirely new set of innovative applications, including gesture recognition, enhanced gaming, augmented reality, panoramic photo capture, vehicle navigation, and fitness monitoring, to name a few.</p>
+<p>Without a doubt, the gyroscope and accelerometer are each exceptional in their own way. However, when we put them together, we can obtain incredibly precise data about an object’s orientation. This is where the MPU6050 enters the picture. The MPU6050 includes a gyroscope and an accelerometer, allowing us to measure rotation along all three axes, static acceleration due to gravity, and dynamic acceleration due to motion.</p>
+<p>Le module au cœur de ce test est le MPU6050, un composant clé pour la perception de mouvement dans de nombreux projets robotiques et d’inertie. Il s’agit d’une unité de mesure inertielle (IMU - Inertial Measurement Unit) 6 axes, combinant un accéléromètre et un gyroscope sur une seule puce.</p>
+<p>---> <strong>MPU6050 Key Features and Functions</strong></p>
+<p>-----> <strong>6-Axis Sensor in a Single Component</strong></p>
+<p><img src="/img/me4.png" alt="Img1"></p>
+<p>The <strong>MPU6050</strong> integrates two essential sensors for <strong>motion detection</strong>:</p>
+<p>------> **3-Axis Accelerometer</p>
+<ul>
+<li>Measures <strong>linear acceleration</strong> along the <strong>X, Y, and Z axes</strong>.</li>
+<li>Can detect <strong>gravity</strong>, helping determine the sensor’s <strong>static orientation</strong>.</li>
+<li><strong>Configurable measurement ranges</strong>: ±2g, ±4g, ±8g, ±16g.</li>
+</ul>
+<p>------> <strong>3-Axis Gyroscope</strong></p>
+<ul>
+<li>Measures <strong>angular velocity</strong> (rotation) around the <strong>X (Roll), Y (Pitch), and Z (Yaw) axes</strong>.</li>
+<li><strong>Configurable measurement ranges</strong>: ±250°/s, ±500°/s, ±1000°/s, ±2000°/s.</li>
+</ul>
+<p>---> <strong>On-Board Digital Motion Processor (DMP)</strong></p>
+<p>The <strong>MPU6050</strong> is distinguished by its <strong>DMP</strong>, an on-board <strong>hardware processing engine</strong>.<br>
+This processor is capable of <strong>merging gyroscope and accelerometer data</strong> directly on the chip, generating <strong>precise quaternions and Euler angles</strong> (<strong>Yaw, Pitch, Roll</strong>).</p>
+<p>------> **Benefits of the DMP</p>
+<ul>
+<li><strong>Reduces processing load</strong> on the external microcontroller (<strong>Arduino Uno</strong>), as complex <strong>sensor fusion calculations</strong> are performed by the <strong>MPU6050 itself</strong>.</li>
+<li><strong>Provides more stable and reliable orientation data</strong>, minimizing <strong>gyroscope drift</strong> and <strong>accelerometer noise</strong>.</li>
+</ul>
+<p>---> <strong>I2C Communication Interface</strong></p>
+<ul>
+<li>The <strong>MPU6050</strong> communicates with the <strong>microcontroller</strong> via the <strong>I2C protocol</strong>.</li>
+<li>Simplifies <strong>wiring and data management</strong> with just <strong>two data wires (SDA and SCL)</strong> in addition to the <strong>power supply</strong>.</li>
+</ul>
+<p>---> **Integrated Temperature Sensor **</p>
+<ul>
+<li>The module includes a <strong>temperature sensor</strong>, useful for <strong>compensating drifts</strong> due to <strong>thermal variations</strong>.</li>
+</ul>
+<p>---> <strong>Operating Voltage</strong></p>
+<ul>
+<li>The <strong>MPU6050</strong> operates over a voltage range of <strong>3.3V to 5V</strong>, making it <strong>compatible with the Arduino Uno</strong>.</li>
+<li>No need for a <strong>voltage level converter</strong> if the module already incorporates a <strong>regulator</strong>.</li>
+</ul>
+<p>---> <strong>Why MPU6050 ?</strong></p>
+<p>The <strong>MPU6050</strong> was chosen for this test due to its ability to provide <strong>high-quality orientation and motion data</strong>, essential for <strong>navigation and stabilization applications</strong>.<br>
+Its <strong>efficient DMP</strong> optimizes the <strong>resources of our microcontroller</strong>, making it an ideal choice.</p>
+<p>For more detailed technical information on the <strong>MPU6050</strong>, its <strong>internal structure</strong>, and <strong>registers</strong>, refer to the full documentation available at:<br>
+<a href="https://lastminuteengineers.com/mpu6050-accel-gyro-arduino-tutorial/">Last Minute Engineers - MPU6050 Accelerometer &#x26; Gyroscope Arduino Tutorial</a></p>
+<br>
+<div class="sl-heading-wrapper level-h3"><h3 id="circuit-diagramm">Circuit Diagramm</h3><a class="sl-anchor-link" href="#circuit-diagramm"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Circuit Diagramm”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="electric-schematic">Electric Schematic</h4><a class="sl-anchor-link" href="#electric-schematic"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Electric Schematic”</span></a></div>
+<p>The diagram below provides a visual illustration of the component layout and electrical connections used for this test. It has been designed to provide a clear and intuitive representation of the assembly. All critical components, such as the Arduino Uno microcontroller and MPU6050 sensor, as well as the LCD (Liquid Crystal Display), are shown with their pins clearly identified (VCC, GND, SDA, SCL, etc.). We’ve taken care to respect the standard color conventions for wires (red for power, black for ground, and distinct colors for data signals) to improve readability and facilitate wiring verification.</p>
+<p><img src="/img/me5.png" alt="Img1"></p>
+<p><img src="/img/me6.png" alt="Img1"></p>
+<p>Based on this image, which shows the pinout of the UNO board, there are 20 digital pins, so if we divide the maximum current that the ATMEGA 328P can deliver by these 20 pins, we have an average current of 20mA per pin.</p>
+<div class="sl-heading-wrapper level-h4"><h4 id="resistor-sizing-method-for-efficient-led-ignition">Resistor sizing method for efficient LED ignition.</h4><a class="sl-anchor-link" href="#resistor-sizing-method-for-efficient-led-ignition"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Resistor sizing method for efficient LED ignition.”</span></a></div>
+<p><img src="/img/me7.png" alt="Img1"></p>
+<p>---> <strong>Resistor Calculation</strong></p>
+<p>Using the formula:</p>
+<center>
+<p>R = <sup>(V<sub>out</sub> - V<sub>th)</sub></sup> / I
+<br></p>
+<p>where V<sub>out</sub> = 5V , we calculate:</p>
+<p>R<sub>GREEN</sub> = <sup>(5V - 1.9V)</sup> / 0.015A
+<br></p>
+<p>R<sub>GREEN</sub> = 206.6 Ohms
+<br></p>
+</center>
+<p>Using the <strong>E24 standard series</strong>, the closest standard resistor value for <strong>R_GREEN</strong> is:</p>
+<center>
+<p><strong>R<sub>GREEN</sub>= 220 Ohms</strong></p>
+<p><img src="/img/me8.png" alt="Img1"></p>
+</center>
+<p>The same applies to the calculation of all remaining resistor values. The following table summarizes the normalized resistor values for each LED.</p>
+<center>
+<p><img src="/img/me9.png" alt="Img1"></p>
+<p><img src="/img/me10.png" alt="Img1"></p>
+</center>
+<div class="sl-heading-wrapper level-h4"><h4 id="connexion-chart">Connexion Chart</h4><a class="sl-anchor-link" href="#connexion-chart"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Connexion Chart”</span></a></div>
+<p>To complete the visual schematic and ensure maximum clarity, the table below exhaustively lists every wire connection between the pins of the MPU6050 sensor, the LCD display and those of the Arduino Uno microcontroller. This table is an invaluable aid for debugging and quickly checking the assembly, listing the pins of each component and their exact correspondence on the development board.</p>
+<p><img src="/img/me11.png" alt="Img1"></p>
+<div class="sl-heading-wrapper level-h3"><h3 id="code-developemnt">Code Developemnt</h3><a class="sl-anchor-link" href="#code-developemnt"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Code Developemnt”</span></a></div>
+<p>This section is dedicated to presenting and explaining the code developed to acquire and process data for the gyroscope and accelerometer module.</p>
+<p>IDE version: 2.3.6</p>
+<p><img src="/img/me12.png" alt="Img1"></p>
+<p>The Arduino IDE uses the integrated AVR-GCC compiler to translate C++ code (Arduino syntax) into machine language that can be understood by the ATmega328P microcontroller. This choice of environment was motivated by its simplicity, its perfect integration with the Arduino Uno board, and the wealth of libraries available, enabling rapid and efficient prototyping.</p>
+<p>Compiler Version : 7.3.0</p>
+<p><img src="/img/me13.png" alt="Img1"></p>
+<div class="sl-heading-wrapper level-h4"><h4 id="libraries-used">Libraries Used</h4><a class="sl-anchor-link" href="#libraries-used"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Libraries Used”</span></a></div>
+<p>To efficiently interact with the <strong>gyroscope-accelerometer module</strong> and the <strong>LCD screen</strong>, we have used specific libraries.<br>
+These libraries <strong>simplify access</strong> to the sensor’s complex functionalities by providing <strong>ready-to-use functions and objects</strong>.</p>
+<div class="sl-heading-wrapper level-h4"><h4 id="wireh-arduino-ide-built-in-library">Wire.h (Arduino IDE Built-in Library)</h4><a class="sl-anchor-link" href="#wireh-arduino-ide-built-in-library"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Wire.h (Arduino IDE Built-in Library)”</span></a></div>
+<ul>
+<li>
+<p><strong>Role</strong>:</p>
+<ul>
+<li>Essential for communication via the <strong>I2C (Inter-Integrated Circuit) protocol</strong>.</li>
+<li>The <strong>MPU6050 module</strong> and the <strong>I2C LCD display</strong> communicate with the <strong>Arduino Uno</strong> via this interface.</li>
+<li><strong>Wire.h</strong> allows initialization of the <strong>I2C bus</strong>, definition of <strong>peripheral addresses</strong>, sending <strong>commands</strong>, and reading <strong>data</strong> from registers.</li>
+</ul>
+</li>
+<li>
+<p><strong>Necessity</strong>:</p>
+<ul>
+<li>The <strong>MPU6050</strong> and <strong>LCD display</strong> are <strong>I2C peripherals</strong>, requiring this library to establish <strong>serial communication</strong> between the <strong>Arduino</strong> and these components.</li>
+</ul>
+</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="i2cdevh--mpu6050_6axis_motionapps20h-jeff-rowbergs-library">I2Cdev.h &#x26; MPU6050_6Axis_MotionApps20.h (Jeff Rowberg’s Library)</h4><a class="sl-anchor-link" href="#i2cdevh--mpu6050_6axis_motionapps20h-jeff-rowbergs-library"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “I2Cdev.h &#x26; MPU6050_6Axis_MotionApps20.h (Jeff Rowberg’s Library)”</span></a></div>
+<ul>
+<li>
+<p><strong>Role</strong>:</p>
+<ul>
+<li>
+<p>These libraries are designed to <strong>exploit the MPU6050’s advanced features</strong>, particularly its <strong>DMP (Digital Motion Processor)</strong>.</p>
+</li>
+<li>
+<p><strong>I2Cdev.h</strong>:</p>
+<ul>
+<li>An <strong>abstraction layer</strong> for general <strong>I2C communications</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>MPU6050_6Axis_MotionApps20.h</strong>:</p>
+<ul>
+<li>A <strong>high-level library</strong> that provides access to <strong>sensor fusion calculations</strong> (gyroscope and accelerometer) directly from the <strong>MPU6050’s DMP</strong>.</li>
+<li>Includes <strong>quaternion calculations</strong>, representing <strong>orientation in 3D</strong> in a <strong>stable and precise</strong> way.</li>
+<li>Allows derivation of <strong>Euler angles</strong> (<strong>Yaw, Pitch, Roll</strong>).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Necessity</strong>:</p>
+<ul>
+<li>Using the <strong>DMP</strong> significantly <strong>reduces the computational load</strong> on the <strong>Arduino</strong>.</li>
+<li>Provides <strong>more stable orientation data</strong>, minimizing <strong>gyroscope drift</strong> and <strong>accelerometer noise</strong>.</li>
+<li>Essential for <strong>reliable detection of robot movements</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="sl-heading-wrapper level-h4"><h4 id="liquidcrystal_i2ch-lcd-library-with-i2c-interface">LiquidCrystal_I2C.h (LCD Library with I2C Interface)</h4><a class="sl-anchor-link" href="#liquidcrystal_i2ch-lcd-library-with-i2c-interface"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “LiquidCrystal_I2C.h (LCD Library with I2C Interface)”</span></a></div>
+<ul>
+<li>
+<p><strong>Role</strong>:</p>
+<ul>
+<li>Simplifies interaction with an <strong>LCD Character Display</strong> via an <strong>I2C interface</strong> (requiring a <strong>PCF8574 module</strong>).</li>
+<li>Enables <strong>display of text, numbers, and custom characters</strong> on the screen.</li>
+</ul>
+</li>
+<li>
+<p><strong>Necessity</strong>:</p>
+<ul>
+<li>Provides <strong>direct visual feedback</strong> on <strong>system status</strong> and <strong>detected movements</strong>.</li>
+<li>Makes <strong>testing more interactive</strong> and <strong>information more accessible</strong> in the field.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h3"><h3 id="code-description">Code Description</h3><a class="sl-anchor-link" href="#code-description"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Code Description”</span></a></div>
+<p>Just after the <strong>“Libraries Used”</strong> section, we declared <strong>constant variables</strong>:</p>
+<div class="expressive-code"><link rel="stylesheet" href="/2025-Team-The_Winners-Docs/_astro/ec.v4551.css"><script type="module" src="/2025-Team-The_Winners-Docs/_astro/ec.p1z7b.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="cpp"><code><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">const</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C792EA;--1:#8844AE">int</span><span style="--0:#D6DEEB;--1:#403F53"> led1 </span><span style="--0:#C792EA;--1:#8844AE">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">4</span><span style="--0:#D6DEEB;--1:#403F53">;</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">const</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C792EA;--1:#8844AE">int</span><span style="--0:#D6DEEB;--1:#403F53"> led2 </span><span style="--0:#C792EA;--1:#8844AE">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">5</span><span style="--0:#D6DEEB;--1:#403F53">;</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">const</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C792EA;--1:#8844AE">int</span><span style="--0:#D6DEEB;--1:#403F53"> led3 </span><span style="--0:#C792EA;--1:#8844AE">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">6</span><span style="--0:#D6DEEB;--1:#403F53">;</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">const</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C792EA;--1:#8844AE">int</span><span style="--0:#D6DEEB;--1:#403F53"> led4 </span><span style="--0:#C792EA;--1:#8844AE">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">7</span><span style="--0:#D6DEEB;--1:#403F53">;</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">const</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C792EA;--1:#8844AE">int</span><span style="--0:#D6DEEB;--1:#403F53"> led5 </span><span style="--0:#C792EA;--1:#8844AE">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">8</span><span style="--0:#D6DEEB;--1:#403F53">;</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">const</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C792EA;--1:#8844AE">int</span><span style="--0:#D6DEEB;--1:#403F53"> led6 </span><span style="--0:#C792EA;--1:#8844AE">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">9</span><span style="--0:#D6DEEB;--1:#403F53">;</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="const int led1 = 4;const int led2 = 5;const int led3 = 6;const int led4 = 7;const int led5 = 8;const int led6 = 9;"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="lcd-initiliazation">LCD Initiliazation</h4><a class="sl-anchor-link" href="#lcd-initiliazation"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “LCD Initiliazation”</span></a></div>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="cpp"><code><div class="ec-line"><div class="code"><span style="--0:#D6DEEB;--1:#403F53">LiquidCrystal_I2C </span><span style="--0:#82AAFF;--1:#3B61B0">lcd</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--1:#AA0982"><span style="--0:#FFEB95">0x</span><span style="--0:#F78C6C">27</span></span><span style="--0:#D6DEEB;--1:#403F53">, </span><span style="--0:#F78C6C;--1:#AA0982">16</span><span style="--0:#D6DEEB;--1:#403F53">, </span><span style="--0:#F78C6C;--1:#AA0982">2</span><span style="--0:#D6DEEB;--1:#403F53">);</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="LiquidCrystal_I2C lcd(0x27, 16, 2);"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="custom-characters-for-lcd-display">Custom characters for LCD display</h4><a class="sl-anchor-link" href="#custom-characters-for-lcd-display"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Custom characters for LCD display”</span></a></div>
+<p>The code defines several custom character sets (called set1_char0 to set6_char5). Each 8-byte byte array represents a 5x8 pixel character pattern.
+Here’s an example showing the 8-byte byte array representing a heart</p>
+<p><img src="/img/me14.png" alt="Img1"></p>
+<p>In our code, these characters are used to display symbols on the LCD screen that represent directions of movement (for example, an arrow to the left or right).</p>
+<p><img src="/img/me15.png" alt="Img1"></p>
+<p>•	Each array (for example, set1_char0) contains 8 bytes. Each byte represents a line of 5 pixels. A 1 means the pixel is on, 0 means it’s off. For example, 0b11111 means that the first 5 pixels of the line are on.</p>
+<div class="sl-heading-wrapper level-h4"><h4 id="character-set-display-functions">Character set display functions</h4><a class="sl-anchor-link" href="#character-set-display-functions"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Character set display functions”</span></a></div>
+<p>There are six functions, displaySet1() to displaySet6(), each responsible for displaying a specific set of custom characters on the LCD screen. Each of these functions takes a float value parameter.</p>
+<p><img src="/img/me16.png" alt="Img1"></p>
+<p>--- > <strong>Custom Character Functions</strong></p>
+<ul>
+<li>
+<p><strong><code dir="auto">lcd.createChar(index, data);</code></strong></p>
+<ul>
+<li>Loads a <strong>custom character</strong> into the <strong>LCD memory</strong> at a specific <strong>index</strong> (<strong>0 to 7</strong>).</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">lcd.write(byte(index));</code></strong></p>
+<ul>
+<li>Displays the <strong>custom character</strong> stored at the <strong>given index</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>LCD Control Functions</strong></p>
+<ul>
+<li>
+<p><strong><code dir="auto">lcd.clear();</code></strong></p>
+<ul>
+<li>Clears <strong>all contents</strong> from the <strong>LCD screen</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">lcd.setCursor(col, row);</code></strong></p>
+<ul>
+<li>Defines the <strong>cursor position</strong> on the LCD screen where the <strong>next character</strong> will be displayed.</li>
+<li><strong><code dir="auto">col</code></strong> → Column (<strong>0 to 15</strong> for a <strong>16x2 LCD</strong>).</li>
+<li><strong><code dir="auto">row</code></strong> → Line (<strong>0 or 1</strong>).</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Displaying Text and Values</strong></p>
+<ul>
+<li>
+<p><strong><code dir="auto">lcd.print(" Speed");</code></strong></p>
+<ul>
+<li>Displays <code dir="auto">"Speed"</code> text on the <strong>first line</strong> of the LCD display.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">lcd.print(value, 2);</code></strong></p>
+<ul>
+<li>Displays <strong>value</strong> (e.g., <strong>acceleration magnitude</strong>) on the <strong>LCD screen</strong> with <strong>two decimal places</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Displaying Movement Directions</strong></p>
+<p>Each <strong><code dir="auto">displaySetX()</code></strong> function displays a <strong>different visual pattern</strong>, representing a <strong>specific direction</strong>:</p>
+<ul>
+<li><strong>Left</strong></li>
+<li><strong>Right</strong></li>
+<li><strong>Front</strong></li>
+<li><strong>Back</strong></li>
+<li><strong>Up</strong></li>
+<li><strong>Down</strong></li>
+</ul>
+<br>
+<div class="sl-heading-wrapper level-h4"><h4 id="variables-and-objects-mpu6050">Variables and objects MPU6050</h4><a class="sl-anchor-link" href="#variables-and-objects-mpu6050"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Variables and objects MPU6050”</span></a></div>
+<br>
+<p><img src="/img/me17.png" alt="Img1"></p>
+<p>---> <strong>MPU6050 Object</strong></p>
+<ul>
+<li><strong><code dir="auto">MPU6050 mpu;</code></strong>
+<ul>
+<li>Creates an <strong>mpu object</strong> of class <strong>MPU6050</strong>, representing the <strong>MPU6050 sensor</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Constants and Flags</strong></p>
+<ul>
+<li>
+<p><strong><code dir="auto">#define EARTH_GRAVITY_MS2 9.80665</code></strong></p>
+<ul>
+<li>Defines a <strong>constant</strong> for <strong>terrestrial gravity</strong> in <strong>m/s²</strong>, used to <strong>convert raw acceleration values</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">bool DMPReady = false;</code></strong></p>
+<ul>
+<li>A <strong>flag</strong> indicating whether the <strong>MPU6050’s DMP (Digital Motion Processor)</strong> is <strong>ready and initialized</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>DMP Configuration Variables</strong></p>
+<ul>
+<li>
+<p><strong><code dir="auto">uint8_t devStatus;</code></strong></p>
+<ul>
+<li>Stores <strong>DMP initialization status</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">uint16_t packetSize;</code></strong></p>
+<ul>
+<li>Stores the <strong>size</strong> of the <strong>DMP’s FIFO data packet</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">uint8_t FIFOBuffer[64];</code></strong></p>
+<ul>
+<li>A <strong>buffer</strong> to store the <strong>data read</strong> from the <strong>MPU6050’s FIFO (First-In, First-Out)</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> Orientation and Motion Data**</p>
+<ul>
+<li>
+<p><strong><code dir="auto">Quaternion q;</code></strong></p>
+<ul>
+<li>A <strong>Quaternion object</strong> to store <strong>MPU6050 orientation data</strong>, representing <strong>rotation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">VectorInt16 aa, aaWorld;</code></strong></p>
+<ul>
+<li><strong><code dir="auto">aa</code></strong> → Stores the <strong>sensor’s raw acceleration</strong>.</li>
+<li><strong><code dir="auto">aaWorld</code></strong> → Stores the <strong>converted acceleration</strong> in a <strong>“world” reference frame</strong> (relative to <strong>gravity</strong> and <strong>absolute orientation</strong>).</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">VectorFloat gravity;</code></strong></p>
+<ul>
+<li>A <strong>VectorFloat object</strong> to store the <strong>calculated gravity vector</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Movement Detection Variables</strong></p>
+<ul>
+<li>
+<p><strong><code dir="auto">VectorInt16 prevAccel = {0, 0, 0};</code></strong></p>
+<ul>
+<li>Stores <strong>previous acceleration values</strong> to <strong>compare changes in movement</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">float movementThreshold = 1.9;</code></strong></p>
+<ul>
+<li>Defines the <strong>minimum acceleration change</strong> (<strong>in m/s²</strong>) considered a <strong>significant movement</strong>.</li>
+<li>Movements <strong>below this threshold</strong> are <strong>ignored</strong>, filtering out <strong>sensor noise</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> <strong>Code Structure</strong></p>
+<p>The code is <strong>modularly structured</strong> and follows the <strong>Arduino environment’s</strong> <code dir="auto">setup()</code> and <code dir="auto">loop()</code> functions.<br>
+It integrates <strong>advanced MPU6050 functionalities</strong> via its <strong>DMP</strong> and a <strong>dynamic display system</strong> on <strong>LCD</strong> and via the <strong>serial monitor</strong>.</p>
+<br>
+<div class="sl-heading-wrapper level-h4"><h4 id="program-structure">Program Structure</h4><a class="sl-anchor-link" href="#program-structure"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Program Structure”</span></a></div>
+<p>The program is divided into <strong>two main parts</strong>:</p>
+<p>---> <strong><code dir="auto">void setup()</code></strong></p>
+<ul>
+<li>Executed <strong>once</strong> at board startup.</li>
+<li>Initializes <strong>serial communication</strong>, configures the <strong>LCD screen</strong>, sets up the <strong>LED pins</strong>, and initializes the <strong>MPU6050 sensor</strong>, including its <strong>DMP configuration</strong>.</li>
+</ul>
+<p>---> <strong><code dir="auto">void loop()</code></strong></p>
+<ul>
+<li>Executed <strong>continuously</strong> after <code dir="auto">setup()</code>.</li>
+<li>Reads <strong>orientation data</strong> (<strong>quaternions, Euler angles</strong>) from the <strong>MPU6050 via DMP</strong>.</li>
+<li>Detects <strong>movements</strong> based on <strong>acceleration</strong>.</li>
+<li>Controls <strong>LEDs</strong> according to the <strong>detected movement</strong>.</li>
+<li>Displays <strong>information</strong> on the <strong>LCD</strong> and <strong>serial monitor</strong>.</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h4"><h4 id="void-setup--initialization"><code dir="auto">void setup()</code> – Initialization</h4><a class="sl-anchor-link" href="#void-setup--initialization"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “void setup() – Initialization”</span></a></div>
+<p>---> I2C and Serial Communication</p>
+<ul>
+<li>
+<p><strong><code dir="auto">Wire.begin();</code></strong> &#x26; <strong><code dir="auto">Wire.setClock(400000);</code></strong></p>
+<ul>
+<li>Initializes <strong>I2C communication</strong>.</li>
+<li>Sets the <strong>I2C clock speed</strong> to <strong>400 kHz</strong> (<strong>fast mode</strong>) for <strong>faster data transfers</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">Serial.begin(115200);</code></strong></p>
+<ul>
+<li>Initializes <strong>serial communication</strong> at <strong>115200 baud</strong>.</li>
+<li>Used for <strong>debugging</strong> and <strong>displaying information</strong> on the <strong>serial monitor</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> MPU6050 Initialization</p>
+<ul>
+<li>
+<p><strong><code dir="auto">mpu.initialize();</code></strong> &#x26; <strong><code dir="auto">mpu.testConnection();</code></strong></p>
+<ul>
+<li>Initializes the <strong>MPU6050</strong> and checks if the <strong>connection is established</strong>.</li>
+<li>If not, the <strong>program stops</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code dir="auto">devStatus = mpu.dmpInitialize();</code></strong></p>
+<ul>
+<li>Initializes the <strong>MPU6050’s DMP</strong> (<strong>Digital Motion Processor</strong>).</li>
+<li>The <strong>DMP</strong> performs <strong>complex calculations</strong> on <strong>sensor data</strong>, reducing the <strong>load on the microcontroller</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> Sensor Calibration</p>
+<ul>
+<li><strong><code dir="auto">mpu.setXGyroOffset(0);</code> … <code dir="auto">mpu.setZAccelOffset(0);</code></strong>
+<ul>
+<li>Defines <strong>sensor calibration offsets</strong>.</li>
+<li>Initially set to <strong>zero</strong>, but can be <strong>adjusted</strong> after <strong>manual or automatic calibration</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>---> DMP Initialization Check</p>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="cpp"><code><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">if</span><span style="--0:#D6DEEB;--1:#403F53"> (devStatus </span><span style="--0:#C792EA;--1:#8844AE">==</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">0</span><span style="--0:#D6DEEB;--1:#403F53">) {</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#919F9F;--1:#5D6376">    </span></span><span style="--0:#919F9F;--1:#5D6376">// DMP is ready</span></div></div><div class="ec-line"><div class="code"><span style="--0:#D6DEEB;--1:#403F53">} </span><span style="--0:#C792EA;--1:#8844AE">else</span><span style="--0:#D6DEEB;--1:#403F53"> {</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#919F9F;--1:#5D6376">    </span></span><span style="--0:#919F9F;--1:#5D6376">// DMP initialization failed, program stops</span></div></div><div class="ec-line"><div class="code"><span style="--0:#D6DEEB;--1:#403F53">}</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="if (devStatus == 0) {    // DMP is ready} else {    // DMP initialization failed, program stops}"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="errors-encountered">Errors Encountered</h2><a class="sl-anchor-link" href="#errors-encountered"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Errors Encountered”</span></a></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="perpectives">Perpectives</h2><a class="sl-anchor-link" href="#perpectives"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Perpectives”</span></a></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="resources">Resources</h2><a class="sl-anchor-link" href="#resources"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Resources”</span></a></div>
+<div class="sl-heading-wrapper level-h3"><h3 id="testing">Testing</h3><a class="sl-anchor-link" href="#testing"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Testing”</span></a></div>
+<p><a href="https://drive.google.com/drive/folders/1vO7L4pdIW4sK3T6IiAPfwFnkrtk9f90w">TRC_Test1</a></p>
+</div> </div> <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links print:hidden astro-3tgidlls" dir="ltr"> <a href="/2025-Team-The_Winners-Docs/getting-started/global-settings/computer/" rel="prev" class="astro-3tgidlls"> <svg aria-hidden="true" class="astro-3tgidlls astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 2rem;"><path d="m11.29 12 3.54-3.54a1 1 0 0 0 0-1.41 1 1 0 0 0-1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42L13.41 17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29 1 1 0 0 0 0-1.41Z"/></svg> <span class="astro-3tgidlls"> <span class="link-head astro-3tgidlls"> Previous page</span> <br class="astro-3tgidlls"> <span class="link-title astro-3tgidlls">Computer Science Test Final</span> </span> </a> <a href="/2025-Team-The_Winners-Docs/contents/components/test2/" rel="next" class="astro-3tgidlls"> <svg aria-hidden="true" class="astro-3tgidlls astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 2rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> <span class="astro-3tgidlls"> <span class="link-head astro-3tgidlls">Next page</span> <br class="astro-3tgidlls"> <span class="link-title astro-3tgidlls">Test 2</span> </span> </a> </div>   </footer>  </div> </div>   </main>  </div> <aside class="right-sidebar-container print:hidden astro-ik4k6pip"> <div class="right-sidebar astro-ik4k6pip"> <div class="lg:sl-hidden astro-ipkdnmgx"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-3uzlzljp"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-3uzlzljp"><details id="starlight__mobile-toc" class="astro-3uzlzljp"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-3uzlzljp"><span class="toggle sl-flex astro-3uzlzljp">On this page<svg aria-hidden="true" class="caret astro-3uzlzljp astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-3uzlzljp"></span></summary><div class="dropdown astro-3uzlzljp"><ul class="isMobile astro-dkgr3tcn" style="--depth: 0;"> <li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#_top" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#ojectives" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Ojectives</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#summary" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Summary</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#materials" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Materials</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#proccess" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Proccess</span> </a> <ul class="isMobile astro-dkgr3tcn" style="--depth: 1;"> <li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#power-supply-design" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Power Supply Design</span> </a>  </li> </ul>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#implementation-of-the-navigation-system" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Implementation of the Navigation System</span> </a> <ul class="isMobile astro-dkgr3tcn" style="--depth: 1;"> <li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#description-of-materials-used" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Description of Materials Used</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#circuit-diagramm" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Circuit Diagramm</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#code-developemnt" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Code Developemnt</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#code-description" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Code Description</span> </a>  </li> </ul>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#errors-encountered" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Errors Encountered</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#perpectives" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Perpectives</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#resources" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Resources</span> </a> <ul class="isMobile astro-dkgr3tcn" style="--depth: 1;"> <li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#testing" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Testing</span> </a>  </li> </ul>  </li> </ul> </div></details></nav></mobile-starlight-toc><script type="module" src="/2025-Team-The_Winners-Docs/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.D3h7WmyO.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-ipkdnmgx"><div class="sl-container astro-ipkdnmgx"><starlight-toc data-min-h="2" data-max-h="3" class="astro-3xdywiv3"><nav aria-labelledby="starlight__on-this-page" class="astro-3xdywiv3"><h2 id="starlight__on-this-page" class="uppercase flex gap-2 pl-6 mb-6 astro-3xdywiv3"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="astro-3xdywiv3"><path d="M1.375 6H10.625M1.375 2.875H10.625M1.375 9.125H5.75" stroke="#A3A3A3" stroke-linecap="round" stroke-linejoin="round" class="astro-3xdywiv3"></path></svg>On this page</h2><ul class="astro-dkgr3tcn" style="--depth: 0;"> <li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#_top" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#ojectives" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Ojectives</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#summary" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Summary</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#materials" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Materials</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#proccess" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Proccess</span> </a> <ul class="astro-dkgr3tcn" style="--depth: 1;"> <li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#power-supply-design" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Power Supply Design</span> </a>  </li> </ul>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#implementation-of-the-navigation-system" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Implementation of the Navigation System</span> </a> <ul class="astro-dkgr3tcn" style="--depth: 1;"> <li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#description-of-materials-used" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Description of Materials Used</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#circuit-diagramm" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Circuit Diagramm</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#code-developemnt" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Code Developemnt</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#code-description" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Code Description</span> </a>  </li> </ul>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#errors-encountered" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Errors Encountered</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#perpectives" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Perpectives</span> </a>  </li><li class="astro-dkgr3tcn" style="--depth: 0;"> <a href="#resources" class="astro-dkgr3tcn" style="--depth: 0;"> <span class="astro-dkgr3tcn" style="--depth: 0;">Resources</span> </a> <ul class="astro-dkgr3tcn" style="--depth: 1;"> <li class="astro-dkgr3tcn" style="--depth: 1;"> <a href="#testing" class="astro-dkgr3tcn" style="--depth: 1;"> <span class="astro-dkgr3tcn" style="--depth: 1;">Testing</span> </a>  </li> </ul>  </li> </ul> </nav></starlight-toc><script type="module" src="/2025-Team-The_Winners-Docs/_astro/TableOfContents.astro_astro_type_script_index_0_lang.Si0ZvO83.js"></script></div></div> </div> </aside> </div>  <script type="module">const t=document.querySelector(".content-container");t&&(t.style.opacity="1");</script>  </div> </div>   </div>  <script type="module">const i=document.querySelector(".sidebar");function a(){i&&(i.style.opacity="1")}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",a):a();const c=document.querySelectorAll(".accordion");c.forEach(e=>{e.addEventListener("click",()=>{c.forEach(t=>{t!==e&&t.classList.remove("active")}),e.classList.toggle("active")})});</script> </body></html>

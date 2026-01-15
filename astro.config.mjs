@@ -24,7 +24,7 @@ export default defineConfig({
 
   site: 'https://tekbot-robotics-challenge.github.io',
   base: '/2025-Team-The_Winners-Docs',
-  outDir: './dist',
+  // outDir: './dist',
 
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
