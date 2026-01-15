@@ -2,6 +2,7 @@
 import { getEntry } from "astro:content";
 import Button from "./user-components/Button.astro";
 import Section from "./Section.astro";
+import { withBasePath } from "@/lib/utils/pathUtils";
 
 const locale = Astro.currentLocale || "en";
 
@@ -11,6 +12,9 @@ const cta = await getEntry(
 );
 const { title, description, enable, fill_button, outline_button } =
   cta?.data ?? {};
+
+// Helper to add base path to links
+const addBasePath = (url: string) => withBasePath(url);
 ---
 
 {
@@ -20,16 +24,14 @@ const { title, description, enable, fill_button, outline_button } =
         {fill_button?.enable && (
           <Button
             label={fill_button.label || "Get Started"}
-            link={fill_button.link || "/getting-started/introduction/overview/"}
+            link={addBasePath(fill_button.link || "/getting-started/introduction/overview/")}
             variant="primary"
           />
         )}
         {outline_button?.enable && (
           <Button
             label={outline_button.label || "Get a live demo"}
-            link={
-              outline_button.link || "/getting-started/introduction/overview/"
-            }
+            link={addBasePath(outline_button.link || "/getting-started/introduction/overview/")}
             variant="outline-primary"
           />
         )}

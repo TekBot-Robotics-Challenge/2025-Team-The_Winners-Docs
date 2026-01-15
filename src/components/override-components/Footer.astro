@@ -4,12 +4,16 @@ import social from "@/config/social.json";
 import { Icon } from "@astrojs/starlight/components";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getTranslations } from "@/lib/utils/languagePerser";
+import { withBasePath } from "@/lib/utils/pathUtils";
 
 const locale = Astro.currentLocale;
 
 const menu = await getTranslations(locale || "en") 
 
 const footer = menu.footer;
+
+// Helper to add base path to internal URLs
+const addBasePath = (url: string) => withBasePath(url);
 ---
 
 <footer>
@@ -22,7 +26,7 @@ const footer = menu.footer;
             <ul>
               {footer.community?.links.map((link: any) => (
                 <li>
-                  <a href={link.url}>{link.name}</a>
+                  <a href={addBasePath(link.url)}>{link.name}</a>
                 </li>
               ))}
             </ul>
@@ -36,7 +40,7 @@ const footer = menu.footer;
             <ul>
               {footer.help_links?.links.map((link: any) => (
                 <li>
-                  <a href={link.url}>{link.name}</a>
+                  <a href={addBasePath(link.url)}>{link.name}</a>
                 </li>
               ))}
             </ul>
@@ -50,7 +54,7 @@ const footer = menu.footer;
             <ul>
               {footer.company?.links.map((link: any) => (
                 <li>
-                  <a href={link.url}>{link.name}</a>
+                  <a href={addBasePath(link.url)}>{link.name}</a>
                 </li>
               ))}
             </ul>
@@ -110,7 +114,7 @@ const footer = menu.footer;
     </div>
     <div class="bottom-footer">
       <p set:html={markdownify(config?.params?.copyright)}/>
-      <a href="/privacy-policy">{Astro.locals.t("footer.privacy", "Privacy Policy")}</a>
+      <a href={addBasePath("/privacy-policy")}>{Astro.locals.t("footer.privacy", "Privacy Policy")}</a>
     </div>
   </div>
 </footer>

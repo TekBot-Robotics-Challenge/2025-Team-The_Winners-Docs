@@ -6,6 +6,7 @@ import config from "@/config/config.json" assert { type: "json" };
 import ThemeSwitch from "./ThemeSwitch.astro";
 import Search from "./Search.astro";
 import LanguageSelect from "@astrojs/starlight/components/LanguageSelect.astro";
+import { withBasePath } from "@/lib/utils/pathUtils";
 
 // get current locale from URL
 const locale = Astro.currentLocale || "en";
@@ -17,6 +18,9 @@ const { main }: { main: any[] } = menu;
 const pathname = Astro.request.url;
 
 const hasSidebar = Astro.locals.starlightRoute.hasSidebar;
+
+// Helper to add base path to URLs
+const addBasePath = (url: string) => withBasePath(url);
 ---
 
 <nav class="navbar container">
@@ -54,10 +58,10 @@ const hasSidebar = Astro.locals.starlightRoute.hasSidebar;
               <span
                 class={`nav-link flex! gap-1! items-center justify-center ${
                   menu.children
-                    ?.map(({ url }: { url: string }) => url)
+                    ?.map(({ url }: { url: string }) => addBasePath(url))
                     .includes(pathname) ||
                   menu.children
-                    ?.map(({ url }: { url: string }) => `${url}/`)
+                    ?.map(({ url }: { url: string }) => `${addBasePath(url)}/`)
                     .includes(pathname)
                     ? "active"
                     : ""
@@ -72,11 +76,11 @@ const hasSidebar = Astro.locals.starlightRoute.hasSidebar;
                 {menu.children?.map((child: { url: string; name: string }) => (
                   <li class="nav-dropdown-item">
                     <a
-                      href={child.url}
+                      href={addBasePath(child.url)}
                       aria-label={child.name}
                       class={`nav-dropdown-link block ${
-                        (pathname === `${child.url}/` ||
-                          pathname === child.url) &&
+                        (pathname === `${addBasePath(child.url)}/` ||
+                          pathname === addBasePath(child.url)) &&
                         "active"
                       }`}
                     >
@@ -89,9 +93,9 @@ const hasSidebar = Astro.locals.starlightRoute.hasSidebar;
           ) : (
             <li class="nav-item">
               <a
-                href={menu.url}
+                href={addBasePath(menu.url)}
                 class={`nav-link block ${
-                  (pathname === `${menu.url}/` || pathname === menu.url) &&
+                  (pathname === `${addBasePath(menu.url)}/` || pathname === addBasePath(menu.url)) &&
                   "active"
                 }`}
               >
@@ -107,7 +111,7 @@ const hasSidebar = Astro.locals.starlightRoute.hasSidebar;
         <li class="mt-4 inline-block lg:hidden">
           <a
             class="btn btn-outline-primary btn-sm"
-            href={navigation_button.link}
+            href={addBasePath(navigation_button.link)}
           >
             {navigation_button.label}
           </a>
@@ -127,7 +131,7 @@ const hasSidebar = Astro.locals.starlightRoute.hasSidebar;
       navigation_button.enable && (
         <a
           class="btn btn-outline-primary hidden! lg:inline-block!"
-          href={navigation_button.link}
+          href={addBasePath(navigation_button.link)}
         >
           {navigation_button.translations
             ? // @ts-ignore

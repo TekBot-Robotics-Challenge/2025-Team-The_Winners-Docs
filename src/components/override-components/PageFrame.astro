@@ -4,8 +4,20 @@ import Footer from "./Footer.astro";
 import CTA from "../CTA.astro";
 import SidebarNav from "../SidebarNav.astro";
 import ImageMod from "../ImageMod.astro";
+import { getBasePath } from "@/lib/utils/pathUtils";
 
 const { hasSidebar } = Astro.locals.starlightRoute;
+const basePath = getBasePath();
+
+// Slideshow images with base path
+const slideshowImages = [
+  `${basePath}/images/img1.jpg`,
+  `${basePath}/images/img2.jpg`,
+  `${basePath}/images/img3.jpg`,
+  `${basePath}/images/img4.jpg`,
+  `${basePath}/images/img5.jpg`,
+  `${basePath}/images/img6.jpg`,
+];
 ---
 
 <div class="page sl-flex">
@@ -23,12 +35,9 @@ const { hasSidebar } = Astro.locals.starlightRoute;
         />
 <div class="slideshow-bg">
  <div class="overlay"></div>
-  <div class="slide" style="background-image: url('/images/img1.jpg')"></div>
-  <div class="slide" style="background-image: url('/images/img2.jpg')"></div>
-  <div class="slide" style="background-image: url('/images/img3.jpg')"></div>
-  <div class="slide" style="background-image: url('/images/img4.jpg')"></div>
-  <div class="slide" style="background-image: url('/images/img5.jpg')"></div>
-  <div class="slide" style="background-image: url('/images/img6.jpg')"></div>
+  {slideshowImages.map((image, index) => (
+    <div class="slide" style={`background-image: url('${image}')`}></div>
+  ))}
 </div>
 
 
