@@ -4,19 +4,20 @@ import Footer from "./Footer.astro";
 import CTA from "../CTA.astro";
 import SidebarNav from "../SidebarNav.astro";
 import ImageMod from "../ImageMod.astro";
-import { getBasePath } from "@/lib/utils/pathUtils";
+import { getBasePath, withBasePath } from "@/lib/utils/pathUtils";
 
 const { hasSidebar } = Astro.locals.starlightRoute;
 const basePath = getBasePath();
 
-// Slideshow images with base path
+// Slideshow images - use withBasePath for CSS background images
+// Astro's base config handles <img> tags automatically, but NOT inline CSS styles
 const slideshowImages = [
-  `${basePath}/images/img1.jpg`,
-  `${basePath}/images/img2.jpg`,
-  `${basePath}/images/img3.jpg`,
-  `${basePath}/images/img4.jpg`,
-  `${basePath}/images/img5.jpg`,
-  `${basePath}/images/img6.jpg`,
+  withBasePath("/images/img1.jpg"),
+  withBasePath("/images/img2.jpg"),
+  withBasePath("/images/img3.jpg"),
+  withBasePath("/images/img4.jpg"),
+  withBasePath("/images/img5.jpg"),
+  withBasePath("/images/img6.jpg"),
 ];
 ---
 
