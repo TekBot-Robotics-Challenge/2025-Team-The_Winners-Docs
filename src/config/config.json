@@ -3,8 +3,8 @@
     "title": "DocKit",
     "logo": "/src/assets/logo-light.svg",
     "logo_darkmode": "/src/assets/documents.png",
-    "logo_width": "127",
-    "logo_height": "32",
+    "logo_width": "100%",
+    "logo_height": "100%",
     "logo_text": "DocKit"
   },
 
