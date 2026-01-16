@@ -583,8 +583,8 @@ La communication multimachine via DDS (Data Distribution Service) permet à plus
 <center>
 <iframe
   src="https://www.veed.io/view/8f7d8a0f-9be6-4c50-bae3-db6a898a8e4d?panel=share"
-  width="800"
-  height="600"
+  width="800px"
+  height="1000px"
   frameborder="0"
   allowfullscreen>
 </iframe>
